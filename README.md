@@ -20,3 +20,4 @@
 * [FlowFile](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#terminology)
 * [Processor](https://nifi.apache.org/docs/nifi-docs/html/getting-started.html#what-processors-are-available)
 * [Controller Service](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#Controller_Services)
+* [Templates](https://nifi.apache.org/docs.html)
