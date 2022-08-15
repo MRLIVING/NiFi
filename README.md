@@ -2,8 +2,7 @@
 
 ## Installation 
 ### [Download](https://nifi.apache.org/download.html)
-* [release archives](https://archive.apache.org/dist/nifi/) are available for wget 
-
+* [release archives](https://archive.apache.org/dist/nifi/) are available for [wget](https://www.digitalocean.com/community/tutorials/how-to-use-wget-to-download-files-and-interact-with-rest-apis)
 
 
 ## Pop commands
