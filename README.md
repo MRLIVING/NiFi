@@ -16,3 +16,7 @@
 ### [Change the Username/Password for Single User login](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#single_user_identity_provider)
 `./nifi.sh set-single-user-credentials ${user} ${passwd}`
 
+## [Terminology](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#terminology)
+* [FlowFile](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#terminology)
+* [Processor](https://nifi.apache.org/docs/nifi-docs/html/getting-started.html#what-processors-are-available)
+* [Controller Service](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#Controller_Services)
