@@ -7,6 +7,8 @@
 ### [Download](https://nifi.apache.org/download.html)
 * [release archives](https://archive.apache.org/dist/nifi/) are available for [wget](https://www.digitalocean.com/community/tutorials/how-to-use-wget-to-download-files-and-interact-with-rest-apis)
 
+* [OpenId Connect](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#openid_connect)
+TODO ...
 
 ## Pop commands
 
