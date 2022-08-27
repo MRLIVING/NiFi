@@ -41,7 +41,7 @@ TODO...
 * [Transformer - Getting to know JOLT](https://intercom.help/godigibee/en/articles/4044359-transformer-getting-to-know-jolt)
 * [Nifi - Using Jolt Transform Json to prepare your Big Data](https://www.youtube.com/watch?v=yEE7Tgc4bh8)
 * [Optimized ETL's with QueryDatabaseTable and PutDatabaseRecord](https://www.youtube.com/watch?v=9X8DJGXMra4)
-
+* [Apache NiFi - 讓你輕鬆設計 Data Pipeline 系列](https://ithelp.ithome.com.tw/users/20140257/ironman/4025)
 
 
 
