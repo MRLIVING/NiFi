@@ -39,6 +39,12 @@ TODO ...
   * pipeline - SQL Server to BigQuery
     * [ExecuteSQL](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.17.0/org.apache.nifi.processors.standard.ExecuteSQL/index.html)
     * [PutBigQueryStreaming](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-gcp-nar/1.15.3/org.apache.nifi.processors.gcp.bigquery.PutBigQueryStreaming/index.html)
+  * pipline - 
+    * [ExecuteSQL](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.17.0/org.apache.nifi.processors.standard.ExecuteSQL/index.html)
+    * [QueryRecord](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.6.0/org.apache.nifi.processors.standard.QueryRecord/index.html)
+    * [UpdateRecord](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.17.0/org.apache.nifi.processors.standard.UpdateRecord/index.html)
+      * [Nifi RecordPath](https://nifi.apache.org/docs/nifi-docs/html/record-path-guide.html#function_usage)
+      * [NiFi Expression Language](https://nifi.apache.org/docs/nifi-docs/html/expression-language-guide.html#in)
   * Processor Configuration
     * [Scheduling Tab](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#scheduling-tab)  
 * [Controller Service](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#Controller_Services)  
