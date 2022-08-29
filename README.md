@@ -10,6 +10,14 @@
 * [OpenId Connect](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#openid_connect)
 TODO ...
 
+### Folders
+* [logs/](https://www.tutorialspoint.com/apache_nifi/apache_nifi_logging.htm)
+  * nifi-app.log
+
+* conf/
+  * [nifi.properties](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#nifi)
+
+
 ## Pop commands
 * list usage options
 `./nifi.sh start`
