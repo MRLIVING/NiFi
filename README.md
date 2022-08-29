@@ -31,13 +31,14 @@ TODO ...
 ## [Terminology](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#terminology)
 * [FlowFile](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#terminology)
 * [Processor](https://nifi.apache.org/docs/nifi-docs/html/getting-started.html#what-processors-are-available) 
-  * pipeline - RDB to RDB
+  * pipeline - SQL Server to MySQL
     * [ExecuteSQL](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.17.0/org.apache.nifi.processors.standard.ExecuteSQL/index.html)
     * [ConvertAvroToJSON](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-avro-nar/1.17.0/org.apache.nifi.processors.avro.ConvertAvroToJSON/index.html)
     * [ConvertJSONToSQL](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.17.0/org.apache.nifi.processors.standard.ConvertJSONToSQL/index.html)
     * [PutSQL](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.17.0/org.apache.nifi.processors.standard.PutSQL/index.html)
-  * pipeline - RDB to BigQuery
-    * ...
+  * pipeline - SQL Server to BigQuery
+    * [ExecuteSQL](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.17.0/org.apache.nifi.processors.standard.ExecuteSQL/index.html)
+    * [PutBigQueryStreaming](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-gcp-nar/1.15.3/org.apache.nifi.processors.gcp.bigquery.PutBigQueryStreaming/index.html)
   * Processor Configuration
     * [Scheduling Tab](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#scheduling-tab)  
 * [Controller Service](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#Controller_Services)  
