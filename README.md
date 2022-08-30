@@ -43,7 +43,7 @@ TODO ...
     * [ExecuteSQL](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.17.0/org.apache.nifi.processors.standard.ExecuteSQL/index.html)
     * [QueryRecord](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.6.0/org.apache.nifi.processors.standard.QueryRecord/index.html)
     * [UpdateRecord](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.17.0/org.apache.nifi.processors.standard.UpdateRecord/index.html)
-      * [Nifi RecordPath](https://nifi.apache.org/docs/nifi-docs/html/record-path-guide.html#function_usage)
+      * [Nifi RecordPath](https://nifi.apache.org/docs/nifi-docs/html/record-path-guide.html)
       * [NiFi Expression Language](https://nifi.apache.org/docs/nifi-docs/html/expression-language-guide.html#in)
   * pipline - tt_JOLT
     * [GenerateFlowFile](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.11.4/org.apache.nifi.processors.standard.GenerateFlowFile/index.html)
