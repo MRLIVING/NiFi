@@ -45,6 +45,9 @@ TODO ...
     * [UpdateRecord](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.17.0/org.apache.nifi.processors.standard.UpdateRecord/index.html)
       * [Nifi RecordPath](https://nifi.apache.org/docs/nifi-docs/html/record-path-guide.html#function_usage)
       * [NiFi Expression Language](https://nifi.apache.org/docs/nifi-docs/html/expression-language-guide.html#in)
+  * pipline - 
+    * [GenerateFlowFile](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.11.4/org.apache.nifi.processors.standard.GenerateFlowFile/index.html)
+    * [JoltTransformJSON](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.17.0/org.apache.nifi.processors.standard.JoltTransformJSON/index.html)
   * Processor Configuration
     * [Scheduling Tab](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#scheduling-tab)  
 * [Controller Service](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#Controller_Services)  
