@@ -49,6 +49,7 @@ TODO ...
     * [GenerateFlowFile](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.11.4/org.apache.nifi.processors.standard.GenerateFlowFile/index.html)
     * [JoltTransformJSON](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.17.0/org.apache.nifi.processors.standard.JoltTransformJSON/index.html)
       * [Jolt Transform Demo](https://jolt-demo.appspot.com/#inception)
+      * [Getting to know JOLT](https://intercom.help/godigibee/en/articles/4044359-transformer-getting-to-know-jolt)      
   * Processor Configuration
     * [Scheduling Tab](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#scheduling-tab)  
 * [Controller Service](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#Controller_Services)  
