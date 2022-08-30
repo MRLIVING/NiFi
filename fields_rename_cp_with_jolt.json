@@ -1,0 +1,23 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "*": {
+        "E_Mail": "[#2].email",
+        "U_mage2_rcvphone": "[#2].cellphone_number",
+        "U_mage2_receiver": "[#2].cust_name",
+        "CardCode": "[#2].cust_id",
+        "Address2": "[#2].addr1"
+      }
+    }
+  },
+  {
+    "operation": "modify-default-beta",
+    "spec": {
+      "*": {
+        "addr2": "@(1,addr1)"
+      }
+    }
+  }  
+  
+]
