@@ -65,9 +65,6 @@ TODO ...
 ### GCPCredentialsControllerService
 TODO...
 
-## TODO ...
-* Jolt  
-* Schedule run
 
 ## Reference
 * [Transformer - Getting to know JOLT](https://intercom.help/godigibee/en/articles/4044359-transformer-getting-to-know-jolt)
