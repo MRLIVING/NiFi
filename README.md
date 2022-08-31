@@ -19,7 +19,7 @@ TODO ...
 
 
 ## Pop commands
-* list usage options
+* list usage options  
 `./nifi.sh start`
 
 * [Start up](https://nifi.apache.org/docs/nifi-docs/html/getting-started.html#for-linuxmacos-users)  
