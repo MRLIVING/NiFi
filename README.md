@@ -37,8 +37,13 @@ TODO ...
     * [ConvertJSONToSQL](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.17.0/org.apache.nifi.processors.standard.ConvertJSONToSQL/index.html)
     * [PutSQL](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.17.0/org.apache.nifi.processors.standard.PutSQL/index.html)
 
-  * pipeline - SQL Server to BigQuery
-    * [ExecuteSQL](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.17.0/org.apache.nifi.processors.standard.ExecuteSQL/index.html)
+  * pipeline - SQL Server to BigQuery  
+    <img src="https://user-images.githubusercontent.com/3777869/188354194-6a71343e-b85d-4a77-8846-2a2e1d2f1a15.png" width="50"></img>
+
+    * [ExecuteSQL](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-standard-nar/1.17.0/org.apache.nifi.processors.standard.ExecuteSQL/index.html)  
+      <img src="https://user-images.githubusercontent.com/3777869/188353444-316b6e0e-a8b2-40fd-8016-e54ac3bd332f.png" width="50"></img>
+      <img src="https://user-images.githubusercontent.com/3777869/188353686-a538d0ec-4309-473f-8a38-3fee9a11bf8b.png" width="50"></img>
+
     * [PutBigQueryStreaming](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-gcp-nar/1.15.3/org.apache.nifi.processors.gcp.bigquery.PutBigQueryStreaming/index.html)
 
   * pipline - 
