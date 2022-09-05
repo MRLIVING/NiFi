@@ -43,6 +43,7 @@ TODO ...
       <img src="https://user-images.githubusercontent.com/3777869/188353444-316b6e0e-a8b2-40fd-8016-e54ac3bd332f.png" width="50"></img>
       <img src="https://user-images.githubusercontent.com/3777869/188353686-a538d0ec-4309-473f-8a38-3fee9a11bf8b.png" width="50"></img>
     * [PutBigQueryStreaming](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-gcp-nar/1.15.3/org.apache.nifi.processors.gcp.bigquery.PutBigQueryStreaming/index.html)  
+      <img src="https://user-images.githubusercontent.com/3777869/188356088-984f6708-61be-46c7-a8f0-02bea434eb59.png" width="50"></img>
       <img src="https://user-images.githubusercontent.com/3777869/188355858-6fdb8f52-35a7-4b29-ba59-4a48799a83bb.png" width="50"></img>
 
   * pipline - 
