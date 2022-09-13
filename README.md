@@ -7,8 +7,7 @@
 ### [Download](https://nifi.apache.org/download.html)
 * [release archives](https://archive.apache.org/dist/nifi/) are available for [wget](https://www.digitalocean.com/community/tutorials/how-to-use-wget-to-download-files-and-interact-with-rest-apis)
 
-* [OpenId Connect](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#openid_connect)
-TODO ...
+
 
 ### Folders
 * [logs/](https://www.tutorialspoint.com/apache_nifi/apache_nifi_logging.htm)
@@ -17,6 +16,12 @@ TODO ...
 * conf/
   * [nifi.properties](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#nifi)
 
+### Driver
+
+
+### [Authentication](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#user_authentication)
+* [OpenId Connect](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#openid_connect)
+TODO ...
 
 ## Pop commands
 * list usage options  
