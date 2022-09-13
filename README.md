@@ -26,6 +26,8 @@ TODO
 * [Microsoft JDBC Driver for SQL Server](https://docs.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-ver16)
 * [MySQL Connector](https://dev.mysql.com/downloads/connector/j/)
 * [JDBC drivers for BigQuery](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers)
+* [GCP service account for Nifi](https://console.cloud.google.com/iam-admin/serviceaccounts?project=czechrepublic-290206&supportedpurview=project)
+  * [credential key](https://console.cloud.google.com/iam-admin/serviceaccounts/details/106493155598502974057/keys?project=czechrepublic-290206&supportedpurview=project)
 
 
 ### [Authentication](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#user_authentication)
