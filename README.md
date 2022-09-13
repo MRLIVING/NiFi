@@ -22,7 +22,7 @@
 ### Drivers and BigQuery Credential
 * [Microsoft JDBC Driver for SQL Server](https://docs.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-ver16)
 * [MySQL Connector](https://dev.mysql.com/downloads/connector/j/)
-* [ODBC and JDBC drivers for BigQuery](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers)
+* [JDBC drivers for BigQuery](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers)
 
 
 ### [Authentication](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#user_authentication)
