@@ -15,7 +15,7 @@
 
 ### Pop commands
 * list options  
-`./nifi.sh`
+`nifi.sh`
 
 * [Start up Nifi](https://nifi.apache.org/docs/nifi-docs/html/getting-started.html#for-linuxmacos-users), web user interface >> `https://${HOST}:8443/nifi/`
   * `nifi.sh start`, to run NiFi in the background
