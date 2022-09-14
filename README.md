@@ -27,8 +27,7 @@ TODO
 
 * [logs/](https://www.tutorialspoint.com/apache_nifi/apache_nifi_logging.htm)
 
-* conf/
-  * [nifi.properties](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#nifi)
+* conf/, [nifi.properties](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#nifi)
 
 * lib/, lib directory that stores the common package and customized require drivers 
 
@@ -80,12 +79,13 @@ TODO ...
     * [Scheduling Tab](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#scheduling-tab)  
 * [Controller Service](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#Controller_Services)  
   * [DBCPConnectionPool](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-dbcp-service-nar/1.17.0/org.apache.nifi.dbcp.DBCPConnectionPool/index.html)
-  * [GCPCredentialsControllerService](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-gcp-nar/1.17.0/org.apache.nifi.processors.gcp.credentials.service.GCPCredentialsControllerService/index.html)  
+  
+  * [GCPCredentialsControllerService](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-gcp-nar/1.17.0/org.apache.nifi.processors.gcp.credentials.service.GCPCredentialsControllerService/index.html)
+  
+  * [GCPCredentialsControllerService](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-gcp-nar/1.17.0/org.apache.nifi.processors.gcp.credentials.service.GCPCredentialsControllerService/index.html)
+  
 * [Templates](https://nifi.apache.org/docs.html)
 
-
-### GCPCredentialsControllerService
-TODO...
 
 
 ## Reference
