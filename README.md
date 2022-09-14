@@ -10,7 +10,7 @@ TODO
 ### [Download](https://nifi.apache.org/download.html)
 * [release archives](https://archive.apache.org/dist/nifi/) are available for [wget](https://www.digitalocean.com/community/tutorials/how-to-use-wget-to-download-files-and-interact-with-rest-apis)
 
-### [Start]
+### Start
 * [Start the Nifi process](https://nifi.apache.org/docs/nifi-docs/html/getting-started.html#for-linuxmacos-users) 
   * `nifi.sh start`, to run NiFi in the background
   * `nifi.sh run`, to run NiFi in the foreground 
