@@ -13,7 +13,9 @@ TODO
 
 
 ### Folders
-* bin/nifi.sh, nifi primary command script 
+* bin/, nifi command script 
+  * `nifi.sh start`, to run NiFi in the background
+  * `nifi.sh run`, to run NiFi in the foreground
 
 * [logs/](https://www.tutorialspoint.com/apache_nifi/apache_nifi_logging.htm)
   * [nifi-app.log](https://www.tutorialspoint.com/apache_nifi/apache_nifi_logging.htm)
