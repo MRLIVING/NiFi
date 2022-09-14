@@ -14,7 +14,7 @@ TODO
 
 ### Folders
 * [logs/](https://www.tutorialspoint.com/apache_nifi/apache_nifi_logging.htm)
-  * nifi-app.log
+  * [nifi-app.log](https://www.tutorialspoint.com/apache_nifi/apache_nifi_logging.htm)
 
 * conf/
   * [nifi.properties](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#nifi)
