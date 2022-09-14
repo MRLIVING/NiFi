@@ -14,11 +14,10 @@ TODO
 * list options  
 `./nifi.sh`
 
-* [Start the Nifi process](https://nifi.apache.org/docs/nifi-docs/html/getting-started.html#for-linuxmacos-users), web user interface >> `https://${HOST}:8443/nifi/`
+* [Start up Nifi](https://nifi.apache.org/docs/nifi-docs/html/getting-started.html#for-linuxmacos-users), web user interface >> `https://${HOST}:8443/nifi/`
   * `nifi.sh start`, to run NiFi in the background
-  * `nifi.sh run`, to run NiFi in the foreground 
-  
-* [Start as a service](https://nifi.apache.org/docs/nifi-docs/html/getting-started.html#installing-as-a-service)
+  * `nifi.sh run`, to run NiFi in the foreground
+  * `nifi.sh install ${service name}`, [installing as a Service](https://nifi.apache.org/docs/nifi-docs/html/getting-started.html#installing-as-a-service)
 
 * [Change the Username/Password for Single User login](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#single_user_identity_provider)  
 `./nifi.sh set-single-user-credentials ${user} ${passwd}`
