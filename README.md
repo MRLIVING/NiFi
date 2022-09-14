@@ -13,6 +13,8 @@ TODO
 
 
 ### Folders
+* bin/nifi.sh, nifi primary command script 
+
 * [logs/](https://www.tutorialspoint.com/apache_nifi/apache_nifi_logging.htm)
   * [nifi-app.log](https://www.tutorialspoint.com/apache_nifi/apache_nifi_logging.htm)
 
