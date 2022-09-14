@@ -82,7 +82,7 @@ TODO ...
     * [Scheduling Tab](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#scheduling-tab)  
 * [Controller Service](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#Controller_Services)  
   <img src="https://user-images.githubusercontent.com/3777869/190074417-b5005ec4-51d8-4de9-b878-9a8809ef6977.png" height="36" width="48">
-  <img src="https://user-images.githubusercontent.com/3777869/190075292-c2145959-9617-40cb-8158-991506caa5a7.png" height="36" width="48">
+  <img src="https://user-images.githubusercontent.com/3777869/190075853-b17c3ad5-e070-4f6c-906b-8e8834a666b2.png" height="36" width="48">
 
   * [DBCPConnectionPool](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-dbcp-service-nar/1.17.0/org.apache.nifi.dbcp.DBCPConnectionPool/index.html)
   
