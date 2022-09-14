@@ -19,8 +19,7 @@ TODO
 * conf/
   * [nifi.properties](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#nifi)
 
-* lib/
-  * lib directory, we store the customized require drivers here
+* lib/, lib directory that stores the common package and customized require drivers 
 
 ### Drivers and BigQuery Credential
 * [Microsoft JDBC Driver for SQL Server](https://docs.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-ver16)
