@@ -89,6 +89,7 @@ TODO ...
     <img src="https://user-images.githubusercontent.com/3777869/190076990-1a84ac0f-2716-421f-b0fa-07270b02006c.png" height="36" width="48">
   
   * [DBCPConnectionPool](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-dbcp-service-nar/1.17.0/org.apache.nifi.dbcp.DBCPConnectionPool/index.html), MySQL  
+    <img src="https://user-images.githubusercontent.com/3777869/190081641-52960811-2272-47bc-a4ec-b0355ec5dbd6.png" height="36" width="48">
     <img src="https://user-images.githubusercontent.com/3777869/190081032-b76fa0e9-09e5-4632-b649-a6fe888924e2.png" height="36" width="48">
   
   * [GCPCredentialsControllerService](https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-gcp-nar/1.17.0/org.apache.nifi.processors.gcp.credentials.service.GCPCredentialsControllerService/index.html)  
