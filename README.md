@@ -10,12 +10,18 @@ TODO
 ### [Download](https://nifi.apache.org/download.html)
 * [release archives](https://archive.apache.org/dist/nifi/) are available for [wget](https://www.digitalocean.com/community/tutorials/how-to-use-wget-to-download-files-and-interact-with-rest-apis)
 
-### Start
-* [Start the Nifi process](https://nifi.apache.org/docs/nifi-docs/html/getting-started.html#for-linuxmacos-users) 
+### Pop commands
+* list options  
+`./nifi.sh`
+
+* [Start the Nifi process](https://nifi.apache.org/docs/nifi-docs/html/getting-started.html#for-linuxmacos-users), web user interface >> `https://${HOST}:8443/nifi/`
   * `nifi.sh start`, to run NiFi in the background
   * `nifi.sh run`, to run NiFi in the foreground 
-
+  
 * [Start as a service](https://nifi.apache.org/docs/nifi-docs/html/getting-started.html#installing-as-a-service)
+
+* [Change the Username/Password for Single User login](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#single_user_identity_provider)  
+`./nifi.sh set-single-user-credentials ${user} ${passwd}`
 
 ### Folders
 * bin/, nifi command script 
@@ -39,15 +45,6 @@ TODO
 * [OpenId Connect](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#openid_connect)
 TODO ...
 
-## Pop commands
-* list usage options  
-`./nifi.sh start`
-
-* [Start up](https://nifi.apache.org/docs/nifi-docs/html/getting-started.html#for-linuxmacos-users)  
-`./nifi.sh start`, web user interface >> `https://${HOST}:8443/nifi/`
-
-* [Change the Username/Password for Single User login](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#single_user_identity_provider)  
-`./nifi.sh set-single-user-credentials ${user} ${passwd}`
 
 ## Concept and [Terminology](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#terminology)
 * [FlowFile](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#terminology)
