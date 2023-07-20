@@ -46,6 +46,17 @@
 * [OpenId Connect](https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html#openid_connect)
 TODO ...
 
+## Command 
+### start
+```
+sudo su -l nifi
+cd /opt/nifi-1.16.2/
+./bin/nifi.sh start
+```
+### check status
+```
+./bin/nifi.sh status
+```
 
 ## Concept and [Terminology](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#terminology)
 * [FlowFile](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#terminology)
