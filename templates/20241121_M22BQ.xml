@@ -1,0 +1,5032 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.3">
+    <description></description>
+    <groupId>544abc02-0183-1000-28a6-73de2b465622</groupId>
+    <name>2024_M22BQ</name>
+    <snippet>
+        <controllerServices>
+            <id>058d8308-529b-3683-0000-000000000000</id>
+            <parentGroupId>46759e09-9f41-3cf3-0000-000000000000</parentGroupId>
+            <versionedComponentId>058d8308-529b-3683-9dc8-e5f2f967a21a</versionedComponentId>
+            <bulletinLevel>WARN</bulletinLevel>
+            <bundle>
+                <artifact>nifi-dbcp-service-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.17.0</version>
+            </bundle>
+            <comments></comments>
+            <descriptors>
+                <entry>
+                    <key>Database Connection URL</key>
+                    <value>
+                        <name>Database Connection URL</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Database Driver Class Name</key>
+                    <value>
+                        <name>Database Driver Class Name</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>database-driver-locations</key>
+                    <value>
+                        <name>database-driver-locations</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>kerberos-user-service</key>
+                    <value>
+                        <identifiesControllerService>org.apache.nifi.kerberos.KerberosUserService</identifiesControllerService>
+                        <name>kerberos-user-service</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>kerberos-credentials-service</key>
+                    <value>
+                        <identifiesControllerService>org.apache.nifi.kerberos.KerberosCredentialsService</identifiesControllerService>
+                        <name>kerberos-credentials-service</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>kerberos-principal</key>
+                    <value>
+                        <name>kerberos-principal</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>kerberos-password</key>
+                    <value>
+                        <name>kerberos-password</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Database User</key>
+                    <value>
+                        <name>Database User</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Password</key>
+                    <value>
+                        <name>Password</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Max Wait Time</key>
+                    <value>
+                        <name>Max Wait Time</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Max Total Connections</key>
+                    <value>
+                        <name>Max Total Connections</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Validation-query</key>
+                    <value>
+                        <name>Validation-query</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-min-idle-conns</key>
+                    <value>
+                        <name>dbcp-min-idle-conns</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-max-idle-conns</key>
+                    <value>
+                        <name>dbcp-max-idle-conns</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-max-conn-lifetime</key>
+                    <value>
+                        <name>dbcp-max-conn-lifetime</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-time-between-eviction-runs</key>
+                    <value>
+                        <name>dbcp-time-between-eviction-runs</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-min-evictable-idle-time</key>
+                    <value>
+                        <name>dbcp-min-evictable-idle-time</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-soft-min-evictable-idle-time</key>
+                    <value>
+                        <name>dbcp-soft-min-evictable-idle-time</name>
+                    </value>
+                </entry>
+            </descriptors>
+            <name>MySQL DBCPConnectionPool</name>
+            <persistsState>false</persistsState>
+            <properties>
+                <entry>
+                    <key>Database Connection URL</key>
+                    <value>jdbc:mysql://mysql.mrl.com.tw.:3306/m2v243_prod</value>
+                </entry>
+                <entry>
+                    <key>Database Driver Class Name</key>
+                    <value>com.mysql.cj.jdbc.Driver</value>
+                </entry>
+                <entry>
+                    <key>database-driver-locations</key>
+                    <value>/opt/nifi-1.17.0/lib/mysql-connector-java-8.0.29.jar</value>
+                </entry>
+                <entry>
+                    <key>kerberos-user-service</key>
+                </entry>
+                <entry>
+                    <key>kerberos-credentials-service</key>
+                </entry>
+                <entry>
+                    <key>kerberos-principal</key>
+                </entry>
+                <entry>
+                    <key>kerberos-password</key>
+                </entry>
+                <entry>
+                    <key>Database User</key>
+                    <value>m2_db_reader</value>
+                </entry>
+                <entry>
+                    <key>Password</key>
+                </entry>
+                <entry>
+                    <key>Max Wait Time</key>
+                    <value>500 millis</value>
+                </entry>
+                <entry>
+                    <key>Max Total Connections</key>
+                    <value>8</value>
+                </entry>
+                <entry>
+                    <key>Validation-query</key>
+                </entry>
+                <entry>
+                    <key>dbcp-min-idle-conns</key>
+                    <value>0</value>
+                </entry>
+                <entry>
+                    <key>dbcp-max-idle-conns</key>
+                    <value>8</value>
+                </entry>
+                <entry>
+                    <key>dbcp-max-conn-lifetime</key>
+                    <value>-1</value>
+                </entry>
+                <entry>
+                    <key>dbcp-time-between-eviction-runs</key>
+                    <value>-1</value>
+                </entry>
+                <entry>
+                    <key>dbcp-min-evictable-idle-time</key>
+                    <value>30 mins</value>
+                </entry>
+                <entry>
+                    <key>dbcp-soft-min-evictable-idle-time</key>
+                    <value>-1</value>
+                </entry>
+            </properties>
+            <state>ENABLED</state>
+            <type>org.apache.nifi.dbcp.DBCPConnectionPool</type>
+        </controllerServices>
+        <controllerServices>
+            <id>4e66742d-2808-3826-0000-000000000000</id>
+            <parentGroupId>46759e09-9f41-3cf3-0000-000000000000</parentGroupId>
+            <versionedComponentId>4e66742d-2808-3826-859e-051ca000cc19</versionedComponentId>
+            <bulletinLevel>WARN</bulletinLevel>
+            <bundle>
+                <artifact>nifi-gcp-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.17.0</version>
+            </bundle>
+            <comments></comments>
+            <descriptors>
+                <entry>
+                    <key>application-default-credentials</key>
+                    <value>
+                        <name>application-default-credentials</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>compute-engine-credentials</key>
+                    <value>
+                        <name>compute-engine-credentials</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>service-account-json-file</key>
+                    <value>
+                        <name>service-account-json-file</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>service-account-json</key>
+                    <value>
+                        <name>service-account-json</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>proxy-configuration-service</key>
+                    <value>
+                        <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+                        <name>proxy-configuration-service</name>
+                    </value>
+                </entry>
+            </descriptors>
+            <name>GCPCredentialsControllerService</name>
+            <persistsState>false</persistsState>
+            <properties>
+                <entry>
+                    <key>application-default-credentials</key>
+                    <value>false</value>
+                </entry>
+                <entry>
+                    <key>compute-engine-credentials</key>
+                    <value>false</value>
+                </entry>
+                <entry>
+                    <key>service-account-json-file</key>
+                    <value>/home/czechrepublic-290206-3bc4c548119f.json</value>
+                </entry>
+                <entry>
+                    <key>service-account-json</key>
+                </entry>
+                <entry>
+                    <key>proxy-configuration-service</key>
+                </entry>
+            </properties>
+            <state>ENABLED</state>
+            <type>org.apache.nifi.processors.gcp.credentials.service.GCPCredentialsControllerService</type>
+        </controllerServices>
+        <controllerServices>
+            <id>85fc3128-cecb-34ea-0000-000000000000</id>
+            <parentGroupId>46759e09-9f41-3cf3-0000-000000000000</parentGroupId>
+            <versionedComponentId>85fc3128-cecb-34ea-8084-eb9c8252e7b4</versionedComponentId>
+            <bulletinLevel>WARN</bulletinLevel>
+            <bundle>
+                <artifact>nifi-record-serialization-services-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.17.0</version>
+            </bundle>
+            <descriptors>
+                <entry>
+                    <key>schema-access-strategy</key>
+                    <value>
+                        <name>schema-access-strategy</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>schema-registry</key>
+                    <value>
+                        <dependencies>
+                            <dependentValues>confluent-encoded</dependentValues>
+                            <dependentValues>schema-name</dependentValues>
+                            <dependentValues>hwx-schema-ref-attributes</dependentValues>
+                            <dependentValues>hwx-content-encoded-schema</dependentValues>
+                            <propertyName>schema-access-strategy</propertyName>
+                        </dependencies>
+                        <identifiesControllerService>org.apache.nifi.schemaregistry.services.SchemaRegistry</identifiesControllerService>
+                        <name>schema-registry</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>schema-name</key>
+                    <value>
+                        <dependencies>
+                            <dependentValues>schema-name</dependentValues>
+                            <propertyName>schema-access-strategy</propertyName>
+                        </dependencies>
+                        <name>schema-name</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>schema-version</key>
+                    <value>
+                        <dependencies>
+                            <dependentValues>schema-name</dependentValues>
+                            <propertyName>schema-access-strategy</propertyName>
+                        </dependencies>
+                        <name>schema-version</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>schema-branch</key>
+                    <value>
+                        <dependencies>
+                            <dependentValues>schema-name</dependentValues>
+                            <propertyName>schema-access-strategy</propertyName>
+                        </dependencies>
+                        <name>schema-branch</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>schema-text</key>
+                    <value>
+                        <dependencies>
+                            <dependentValues>schema-text-property</dependentValues>
+                            <propertyName>schema-access-strategy</propertyName>
+                        </dependencies>
+                        <name>schema-text</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>cache-size</key>
+                    <value>
+                        <name>cache-size</name>
+                    </value>
+                </entry>
+            </descriptors>
+            <name>AvroReader</name>
+            <persistsState>false</persistsState>
+            <properties>
+                <entry>
+                    <key>schema-access-strategy</key>
+                    <value>embedded-avro-schema</value>
+                </entry>
+                <entry>
+                    <key>schema-registry</key>
+                </entry>
+                <entry>
+                    <key>schema-name</key>
+                    <value>${schema.name}</value>
+                </entry>
+                <entry>
+                    <key>schema-version</key>
+                </entry>
+                <entry>
+                    <key>schema-branch</key>
+                </entry>
+                <entry>
+                    <key>schema-text</key>
+                    <value>${avro.schema}</value>
+                </entry>
+                <entry>
+                    <key>cache-size</key>
+                    <value>1000</value>
+                </entry>
+            </properties>
+            <state>ENABLED</state>
+            <type>org.apache.nifi.avro.AvroReader</type>
+        </controllerServices>
+        <controllerServices>
+            <id>af16eeae-adf1-3fd9-0000-000000000000</id>
+            <parentGroupId>46759e09-9f41-3cf3-0000-000000000000</parentGroupId>
+            <versionedComponentId>af16eeae-adf1-3fd9-85d1-9f7061068916</versionedComponentId>
+            <bulletinLevel>WARN</bulletinLevel>
+            <bundle>
+                <artifact>nifi-dbcp-service-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.17.0</version>
+            </bundle>
+            <comments></comments>
+            <descriptors>
+                <entry>
+                    <key>Database Connection URL</key>
+                    <value>
+                        <name>Database Connection URL</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Database Driver Class Name</key>
+                    <value>
+                        <name>Database Driver Class Name</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>database-driver-locations</key>
+                    <value>
+                        <name>database-driver-locations</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>kerberos-user-service</key>
+                    <value>
+                        <identifiesControllerService>org.apache.nifi.kerberos.KerberosUserService</identifiesControllerService>
+                        <name>kerberos-user-service</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>kerberos-credentials-service</key>
+                    <value>
+                        <identifiesControllerService>org.apache.nifi.kerberos.KerberosCredentialsService</identifiesControllerService>
+                        <name>kerberos-credentials-service</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>kerberos-principal</key>
+                    <value>
+                        <name>kerberos-principal</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>kerberos-password</key>
+                    <value>
+                        <name>kerberos-password</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Database User</key>
+                    <value>
+                        <name>Database User</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Password</key>
+                    <value>
+                        <name>Password</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Max Wait Time</key>
+                    <value>
+                        <name>Max Wait Time</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Max Total Connections</key>
+                    <value>
+                        <name>Max Total Connections</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Validation-query</key>
+                    <value>
+                        <name>Validation-query</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-min-idle-conns</key>
+                    <value>
+                        <name>dbcp-min-idle-conns</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-max-idle-conns</key>
+                    <value>
+                        <name>dbcp-max-idle-conns</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-max-conn-lifetime</key>
+                    <value>
+                        <name>dbcp-max-conn-lifetime</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-time-between-eviction-runs</key>
+                    <value>
+                        <name>dbcp-time-between-eviction-runs</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-min-evictable-idle-time</key>
+                    <value>
+                        <name>dbcp-min-evictable-idle-time</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>dbcp-soft-min-evictable-idle-time</key>
+                    <value>
+                        <name>dbcp-soft-min-evictable-idle-time</name>
+                    </value>
+                </entry>
+            </descriptors>
+            <name>BigQuery DBCPConnectionPool</name>
+            <persistsState>false</persistsState>
+            <properties>
+                <entry>
+                    <key>Database Connection URL</key>
+                    <value>jdbc:bigquery://https://www.googleapis.com/bigquery/v2:443;ProjectId=czechrepublic-290206;OAuthType=0;OAuthServiceAcctEmail=nifi2bq@czechrepublic-290206.iam.gserviceaccount.com;OAuthPvtKeyPath=/home/czechrepublic-290206-3bc4c548119f.json</value>
+                </entry>
+                <entry>
+                    <key>Database Driver Class Name</key>
+                    <value>com.simba.googlebigquery.jdbc.Driver</value>
+                </entry>
+                <entry>
+                    <key>database-driver-locations</key>
+                    <value>/opt/nifi-1.17.0/lib/bqdriver</value>
+                </entry>
+                <entry>
+                    <key>kerberos-user-service</key>
+                </entry>
+                <entry>
+                    <key>kerberos-credentials-service</key>
+                </entry>
+                <entry>
+                    <key>kerberos-principal</key>
+                </entry>
+                <entry>
+                    <key>kerberos-password</key>
+                </entry>
+                <entry>
+                    <key>Database User</key>
+                </entry>
+                <entry>
+                    <key>Password</key>
+                </entry>
+                <entry>
+                    <key>Max Wait Time</key>
+                    <value>500 millis</value>
+                </entry>
+                <entry>
+                    <key>Max Total Connections</key>
+                    <value>8</value>
+                </entry>
+                <entry>
+                    <key>Validation-query</key>
+                </entry>
+                <entry>
+                    <key>dbcp-min-idle-conns</key>
+                    <value>0</value>
+                </entry>
+                <entry>
+                    <key>dbcp-max-idle-conns</key>
+                    <value>8</value>
+                </entry>
+                <entry>
+                    <key>dbcp-max-conn-lifetime</key>
+                    <value>-1</value>
+                </entry>
+                <entry>
+                    <key>dbcp-time-between-eviction-runs</key>
+                    <value>-1</value>
+                </entry>
+                <entry>
+                    <key>dbcp-min-evictable-idle-time</key>
+                    <value>30 mins</value>
+                </entry>
+                <entry>
+                    <key>dbcp-soft-min-evictable-idle-time</key>
+                    <value>-1</value>
+                </entry>
+            </properties>
+            <state>ENABLED</state>
+            <type>org.apache.nifi.dbcp.DBCPConnectionPool</type>
+        </controllerServices>
+        <processGroups>
+            <id>8f8a2f97-959c-3ff6-0000-000000000000</id>
+            <parentGroupId>46759e09-9f41-3cf3-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <versionedComponentId>8f8a2f97-959c-3ff6-9e4c-9ac1464e4e6d</versionedComponentId>
+            <comments></comments>
+            <contents>
+                <labels>
+                    <id>0874ede2-9bf8-310e-0000-000000000000</id>
+                    <parentGroupId>8f8a2f97-959c-3ff6-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1024.0</x>
+                        <y>384.0</y>
+                    </position>
+                    <versionedComponentId>0874ede2-9bf8-310e-9d8a-d23b2d7a9bee</versionedComponentId>
+                    <height>32.0</height>
+                    <label>M2 官網訂單是否到過體驗店</label>
+                    <style>
+                        <entry>
+                            <key>background-color</key>
+                            <value>#d6ffe5</value>
+                        </entry>
+                        <entry>
+                            <key>font-size</key>
+                            <value>16px</value>
+                        </entry>
+                    </style>
+                    <width>232.0</width>
+                    <zIndex>0</zIndex>
+                </labels>
+                <labels>
+                    <id>1957d4ee-0f88-3a05-0000-000000000000</id>
+                    <parentGroupId>8f8a2f97-959c-3ff6-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1272.0</x>
+                        <y>384.0</y>
+                    </position>
+                    <versionedComponentId>1957d4ee-0f88-3a05-8bfb-283d078af919</versionedComponentId>
+                    <height>32.0</height>
+                    <label>每周三 2:30</label>
+                    <style>
+                        <entry>
+                            <key>font-size</key>
+                            <value>16px</value>
+                        </entry>
+                    </style>
+                    <width>136.0</width>
+                    <zIndex>0</zIndex>
+                </labels>
+                <labels>
+                    <id>2d64d71d-e339-3938-0000-000000000000</id>
+                    <parentGroupId>8f8a2f97-959c-3ff6-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>696.0</x>
+                        <y>696.0</y>
+                    </position>
+                    <versionedComponentId>2d64d71d-e339-3938-a13a-271634e3ac64</versionedComponentId>
+                    <height>32.0</height>
+                    <label>at 12:15</label>
+                    <style>
+                        <entry>
+                            <key>font-size</key>
+                            <value>16px</value>
+                        </entry>
+                    </style>
+                    <width>160.0</width>
+                    <zIndex>0</zIndex>
+                </labels>
+                <labels>
+                    <id>43b58a3f-a7d6-342c-0000-000000000000</id>
+                    <parentGroupId>8f8a2f97-959c-3ff6-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>464.0</x>
+                        <y>80.0</y>
+                    </position>
+                    <versionedComponentId>43b58a3f-a7d6-342c-94e9-68b5e29810d0</versionedComponentId>
+                    <height>32.0</height>
+                    <label>業務邀請LINE註冊</label>
+                    <style>
+                        <entry>
+                            <key>background-color</key>
+                            <value>#d6ffe5</value>
+                        </entry>
+                        <entry>
+                            <key>font-size</key>
+                            <value>16px</value>
+                        </entry>
+                    </style>
+                    <width>144.0</width>
+                    <zIndex>0</zIndex>
+                </labels>
+                <labels>
+                    <id>49ef14c5-17f3-3509-0000-000000000000</id>
+                    <parentGroupId>8f8a2f97-959c-3ff6-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1016.0</x>
+                        <y>80.0</y>
+                    </position>
+                    <versionedComponentId>49ef14c5-17f3-3509-a567-0e1ea0f18965</versionedComponentId>
+                    <height>32.0</height>
+                    <label>M2 EMAIL 檢查</label>
+                    <style>
+                        <entry>
+                            <key>background-color</key>
+                            <value>#d6ffe5</value>
+                        </entry>
+                        <entry>
+                            <key>font-size</key>
+                            <value>16px</value>
+                        </entry>
+                    </style>
+                    <width>144.0</width>
+                    <zIndex>0</zIndex>
+                </labels>
+                <labels>
+                    <id>5345f7ca-ad4f-3796-0000-000000000000</id>
+                    <parentGroupId>8f8a2f97-959c-3ff6-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1016.0</x>
+                        <y>48.0</y>
+                    </position>
+                    <versionedComponentId>5345f7ca-ad4f-3796-ac16-0dd5825cff22</versionedComponentId>
+                    <height>24.0</height>
+                    <label>dup</label>
+                    <style>
+                        <entry>
+                            <key>background-color</key>
+                            <value>#d6f1ff</value>
+                        </entry>
+                        <entry>
+                            <key>font-size</key>
+                            <value>12px</value>
+                        </entry>
+                    </style>
+                    <width>64.0</width>
+                    <zIndex>0</zIndex>
+                </labels>
+                <labels>
+                    <id>67342842-580c-3d6f-0000-000000000000</id>
+                    <parentGroupId>8f8a2f97-959c-3ff6-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>616.0</x>
+                        <y>80.0</y>
+                    </position>
+                    <versionedComponentId>67342842-580c-3d6f-b204-4b6182c90074</versionedComponentId>
+                    <height>32.0</height>
+                    <label>every day 1:48, 7:48, 13:48, 19:48</label>
+                    <style>
+                        <entry>
+                            <key>font-size</key>
+                            <value>16px</value>
+                        </entry>
+                    </style>
+                    <width>264.0</width>
+                    <zIndex>0</zIndex>
+                </labels>
+                <labels>
+                    <id>6ba8b5f1-d992-364f-0000-000000000000</id>
+                    <parentGroupId>8f8a2f97-959c-3ff6-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>464.0</x>
+                        <y>696.0</y>
+                    </position>
+                    <versionedComponentId>6ba8b5f1-d992-364f-a093-8d5046cbced1</versionedComponentId>
+                    <height>32.0</height>
+                    <label>專案使用</label>
+                    <style>
+                        <entry>
+                            <key>background-color</key>
+                            <value>#d6ffe5</value>
+                        </entry>
+                        <entry>
+                            <key>font-size</key>
+                            <value>16px</value>
+                        </entry>
+                    </style>
+                    <width>216.0</width>
+                    <zIndex>0</zIndex>
+                </labels>
+                <labels>
+                    <id>6c3ba4e8-52b0-3faa-0000-000000000000</id>
+                    <parentGroupId>8f8a2f97-959c-3ff6-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>696.0</x>
+                        <y>384.0</y>
+                    </position>
+                    <versionedComponentId>6c3ba4e8-52b0-3faa-a9fd-3e5edc76549c</versionedComponentId>
+                    <height>32.0</height>
+                    <label>at 30th min of hour</label>
+                    <style>
+                        <entry>
+                            <key>font-size</key>
+                            <value>16px</value>
+                        </entry>
+                    </style>
+                    <width>160.0</width>
+                    <zIndex>0</zIndex>
+                </labels>
+                <labels>
+                    <id>87136b71-3242-35c6-0000-000000000000</id>
+                    <parentGroupId>8f8a2f97-959c-3ff6-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1168.0</x>
+                        <y>80.0</y>
+                    </position>
+                    <versionedComponentId>87136b71-3242-35c6-8f4a-85b4f91c237b</versionedComponentId>
+                    <height>32.0</height>
+                    <label>everyday 2:00, 8:00, 14:00, 20:00</label>
+                    <style>
+                        <entry>
+                            <key>font-size</key>
+                            <value>16px</value>
+                        </entry>
+                    </style>
+                    <width>248.0</width>
+                    <zIndex>0</zIndex>
+                </labels>
+                <labels>
+                    <id>90c781eb-9517-3b3d-0000-000000000000</id>
+                    <parentGroupId>8f8a2f97-959c-3ff6-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>464.0</x>
+                        <y>384.0</y>
+                    </position>
+                    <versionedComponentId>90c781eb-9517-3b3d-9052-27a36686fb53</versionedComponentId>
+                    <height>32.0</height>
+                    <label>M2 order id &amp; increment id</label>
+                    <style>
+                        <entry>
+                            <key>background-color</key>
+                            <value>#d6ffe5</value>
+                        </entry>
+                        <entry>
+                            <key>font-size</key>
+                            <value>16px</value>
+                        </entry>
+                    </style>
+                    <width>216.0</width>
+                    <zIndex>0</zIndex>
+                </labels>
+                <labels>
+                    <id>ac3d9c02-8865-3a97-0000-000000000000</id>
+                    <parentGroupId>8f8a2f97-959c-3ff6-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>499.0</x>
+                        <y>433.0</y>
+                    </position>
+                    <versionedComponentId>ac3d9c02-8865-3a97-a293-f7a28d2d2859</versionedComponentId>
+                    <height>24.0</height>
+                    <label>dup</label>
+                    <style>
+                        <entry>
+                            <key>background-color</key>
+                            <value>#d6f1ff</value>
+                        </entry>
+                        <entry>
+                            <key>font-size</key>
+                            <value>12px</value>
+                        </entry>
+                    </style>
+                    <width>64.0</width>
+                    <zIndex>0</zIndex>
+                </labels>
+                <labels>
+                    <id>c4642c55-5093-39c4-0000-000000000000</id>
+                    <parentGroupId>8f8a2f97-959c-3ff6-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>464.0</x>
+                        <y>48.0</y>
+                    </position>
+                    <versionedComponentId>c4642c55-5093-39c4-9e55-784ee383fc93</versionedComponentId>
+                    <height>24.0</height>
+                    <label>dup</label>
+                    <style>
+                        <entry>
+                            <key>background-color</key>
+                            <value>#d6f1ff</value>
+                        </entry>
+                        <entry>
+                            <key>font-size</key>
+                            <value>12px</value>
+                        </entry>
+                    </style>
+                    <width>64.0</width>
+                    <zIndex>0</zIndex>
+                </labels>
+                <labels>
+                    <id>ee50bf2c-21cd-3f66-0000-000000000000</id>
+                    <parentGroupId>8f8a2f97-959c-3ff6-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1024.0</x>
+                        <y>352.0</y>
+                    </position>
+                    <versionedComponentId>ee50bf2c-21cd-3f66-95f5-b92bc6fdbf07</versionedComponentId>
+                    <height>24.0</height>
+                    <label>dup</label>
+                    <style>
+                        <entry>
+                            <key>background-color</key>
+                            <value>#d6f1ff</value>
+                        </entry>
+                        <entry>
+                            <key>font-size</key>
+                            <value>12px</value>
+                        </entry>
+                    </style>
+                    <width>64.0</width>
+                    <zIndex>0</zIndex>
+                </labels>
+                <processGroups>
+                    <id>0a3e95dc-422d-39cb-0000-000000000000</id>
+                    <parentGroupId>8f8a2f97-959c-3ff6-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1016.0</x>
+                        <y>120.0</y>
+                    </position>
+                    <versionedComponentId>0a3e95dc-422d-39cb-b1e3-a969ab574a03</versionedComponentId>
+                    <comments>比對 M2 &amp; SAP 客戶發票 email 不同</comments>
+                    <contents>
+                        <processGroups>
+                            <id>02312a7b-e749-3b67-0000-000000000000</id>
+                            <parentGroupId>0a3e95dc-422d-39cb-0000-000000000000</parentGroupId>
+                            <position>
+<x>680.0</x>
+<y>40.0</y>
+                            </position>
+                            <versionedComponentId>02312a7b-e749-3b67-8a27-f667193f1843</versionedComponentId>
+                            <comments></comments>
+                            <contents>
+<connections>
+    <id>29937e16-d6ec-3382-0000-000000000000</id>
+    <parentGroupId>02312a7b-e749-3b67-0000-000000000000</parentGroupId>
+    <versionedComponentId>29937e16-d6ec-3382-a037-e30c0ff03600</versionedComponentId>
+    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+    <destination>
+        <groupId>02312a7b-e749-3b67-0000-000000000000</groupId>
+        <id>54f5ba92-b29f-3cfc-0000-000000000000</id>
+        <type>PROCESSOR</type>
+        <versionedComponentId>54f5ba92-b29f-3cfc-a7bc-7fa4294abef3</versionedComponentId>
+    </destination>
+    <flowFileExpiration>0 sec</flowFileExpiration>
+    <labelIndex>1</labelIndex>
+    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+    <name></name>
+    <selectedRelationships>success</selectedRelationships>
+    <source>
+        <groupId>02312a7b-e749-3b67-0000-000000000000</groupId>
+        <id>8b27bfb4-cb22-30d7-0000-000000000000</id>
+        <type>PROCESSOR</type>
+        <versionedComponentId>8b27bfb4-cb22-30d7-b748-26049302bfbe</versionedComponentId>
+    </source>
+    <zIndex>0</zIndex>
+</connections>
+<connections>
+    <id>b937890b-c106-3d85-0000-000000000000</id>
+    <parentGroupId>02312a7b-e749-3b67-0000-000000000000</parentGroupId>
+    <versionedComponentId>b937890b-c106-3d85-8974-6a6306b9f27b</versionedComponentId>
+    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+    <destination>
+        <groupId>02312a7b-e749-3b67-0000-000000000000</groupId>
+        <id>0ceb9859-e179-3996-0000-000000000000</id>
+        <type>PROCESSOR</type>
+        <versionedComponentId>0ceb9859-e179-3996-bd93-5fbbe9529e47</versionedComponentId>
+    </destination>
+    <flowFileExpiration>0 sec</flowFileExpiration>
+    <labelIndex>1</labelIndex>
+    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+    <name></name>
+    <selectedRelationships>count_gt_zero</selectedRelationships>
+    <source>
+        <groupId>02312a7b-e749-3b67-0000-000000000000</groupId>
+        <id>54f5ba92-b29f-3cfc-0000-000000000000</id>
+        <type>PROCESSOR</type>
+        <versionedComponentId>54f5ba92-b29f-3cfc-a7bc-7fa4294abef3</versionedComponentId>
+    </source>
+    <zIndex>0</zIndex>
+</connections>
+<processors>
+    <id>0ceb9859-e179-3996-0000-000000000000</id>
+    <parentGroupId>02312a7b-e749-3b67-0000-000000000000</parentGroupId>
+    <position>
+        <x>512.0</x>
+        <y>496.0</y>
+    </position>
+    <versionedComponentId>0ceb9859-e179-3996-bd93-5fbbe9529e47</versionedComponentId>
+    <bundle>
+        <artifact>nifi-gcp-nar</artifact>
+        <group>org.apache.nifi</group>
+        <version>1.17.0</version>
+    </bundle>
+    <config>
+        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+        <bulletinLevel>WARN</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <descriptors>
+            <entry>
+                <key>gcp-project-id</key>
+                <value>
+                    <name>gcp-project-id</name>
+                </value>
+            </entry>
+            <entry>
+                <key>GCP Credentials Provider Service</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.gcp.credentials.service.GCPCredentialsService</identifiesControllerService>
+                    <name>GCP Credentials Provider Service</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-retry-count</key>
+                <value>
+                    <name>gcp-retry-count</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-host</key>
+                <value>
+                    <name>gcp-proxy-host</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-port</key>
+                <value>
+                    <name>gcp-proxy-port</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-name</key>
+                <value>
+                    <name>gcp-proxy-user-name</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-password</key>
+                <value>
+                    <name>gcp-proxy-user-password</name>
+                </value>
+            </entry>
+            <entry>
+                <key>proxy-configuration-service</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+                    <name>proxy-configuration-service</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.dataset</key>
+                <value>
+                    <name>bq.dataset</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.table.name</key>
+                <value>
+                    <name>bq.table.name</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.load.ignore_unknown</key>
+                <value>
+                    <name>bq.load.ignore_unknown</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.record.reader</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.serialization.RecordReaderFactory</identifiesControllerService>
+                    <name>bq.record.reader</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.skip.invalid.rows</key>
+                <value>
+                    <name>bq.skip.invalid.rows</name>
+                </value>
+            </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+            <entry>
+                <key>gcp-project-id</key>
+                <value>#{BQ.projectID}</value>
+            </entry>
+            <entry>
+                <key>GCP Credentials Provider Service</key>
+                <value>4e66742d-2808-3826-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>gcp-retry-count</key>
+                <value>6</value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-host</key>
+            </entry>
+            <entry>
+                <key>gcp-proxy-port</key>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-name</key>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-password</key>
+            </entry>
+            <entry>
+                <key>proxy-configuration-service</key>
+            </entry>
+            <entry>
+                <key>bq.dataset</key>
+                <value>#{BQ.m2Dataset}</value>
+            </entry>
+            <entry>
+                <key>bq.table.name</key>
+                <value>#{BQ.m2.dup.m2_email}</value>
+            </entry>
+            <entry>
+                <key>bq.load.ignore_unknown</key>
+                <value>false</value>
+            </entry>
+            <entry>
+                <key>bq.record.reader</key>
+                <value>85fc3128-cecb-34ea-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>bq.skip.invalid.rows</key>
+                <value>false</value>
+            </entry>
+        </properties>
+        <retryCount>10</retryCount>
+        <runDurationMillis>0</runDurationMillis>
+        <schedulingPeriod>0 sec</schedulingPeriod>
+        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+    </config>
+    <executionNodeRestricted>false</executionNodeRestricted>
+    <name>PutBigQueryStreaming</name>
+    <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>failure</name>
+        <retry>false</retry>
+    </relationships>
+    <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>success</name>
+        <retry>false</retry>
+    </relationships>
+    <state>RUNNING</state>
+    <style/>
+    <type>org.apache.nifi.processors.gcp.bigquery.PutBigQueryStreaming</type>
+</processors>
+<processors>
+    <id>54f5ba92-b29f-3cfc-0000-000000000000</id>
+    <parentGroupId>02312a7b-e749-3b67-0000-000000000000</parentGroupId>
+    <position>
+        <x>512.0</x>
+        <y>312.0</y>
+    </position>
+    <versionedComponentId>54f5ba92-b29f-3cfc-a7bc-7fa4294abef3</versionedComponentId>
+    <bundle>
+        <artifact>nifi-standard-nar</artifact>
+        <group>org.apache.nifi</group>
+        <version>1.17.0</version>
+    </bundle>
+    <config>
+        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+        <bulletinLevel>WARN</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <descriptors>
+            <entry>
+                <key>Routing Strategy</key>
+                <value>
+                    <name>Routing Strategy</name>
+                </value>
+            </entry>
+            <entry>
+                <key>count_gt_zero</key>
+                <value>
+                    <name>count_gt_zero</name>
+                </value>
+            </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+            <entry>
+                <key>Routing Strategy</key>
+                <value>Route to Property name</value>
+            </entry>
+            <entry>
+                <key>count_gt_zero</key>
+                <value>${executesql.row.count:replaceNull(0):gt(0)}</value>
+            </entry>
+        </properties>
+        <retryCount>10</retryCount>
+        <runDurationMillis>0</runDurationMillis>
+        <schedulingPeriod>0 sec</schedulingPeriod>
+        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+    </config>
+    <executionNodeRestricted>false</executionNodeRestricted>
+    <name>RouteOnAttribute</name>
+    <relationships>
+        <autoTerminate>false</autoTerminate>
+        <name>count_gt_zero</name>
+        <retry>false</retry>
+    </relationships>
+    <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>unmatched</name>
+        <retry>false</retry>
+    </relationships>
+    <state>RUNNING</state>
+    <style/>
+    <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
+</processors>
+<processors>
+    <id>8b27bfb4-cb22-30d7-0000-000000000000</id>
+    <parentGroupId>02312a7b-e749-3b67-0000-000000000000</parentGroupId>
+    <position>
+        <x>512.0</x>
+        <y>136.0</y>
+    </position>
+    <versionedComponentId>8b27bfb4-cb22-30d7-b748-26049302bfbe</versionedComponentId>
+    <bundle>
+        <artifact>nifi-standard-nar</artifact>
+        <group>org.apache.nifi</group>
+        <version>1.17.0</version>
+    </bundle>
+    <config>
+        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+        <bulletinLevel>WARN</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <descriptors>
+            <entry>
+                <key>Database Connection Pooling Service</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.dbcp.DBCPService</identifiesControllerService>
+                    <name>Database Connection Pooling Service</name>
+                </value>
+            </entry>
+            <entry>
+                <key>sql-pre-query</key>
+                <value>
+                    <name>sql-pre-query</name>
+                </value>
+            </entry>
+            <entry>
+                <key>SQL select query</key>
+                <value>
+                    <name>SQL select query</name>
+                </value>
+            </entry>
+            <entry>
+                <key>sql-post-query</key>
+                <value>
+                    <name>sql-post-query</name>
+                </value>
+            </entry>
+            <entry>
+                <key>Max Wait Time</key>
+                <value>
+                    <name>Max Wait Time</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-normalize</key>
+                <value>
+                    <name>dbf-normalize</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-user-logical-types</key>
+                <value>
+                    <name>dbf-user-logical-types</name>
+                </value>
+            </entry>
+            <entry>
+                <key>compression-format</key>
+                <value>
+                    <name>compression-format</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-default-precision</key>
+                <value>
+                    <name>dbf-default-precision</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-default-scale</key>
+                <value>
+                    <name>dbf-default-scale</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-max-rows</key>
+                <value>
+                    <name>esql-max-rows</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-output-batch-size</key>
+                <value>
+                    <name>esql-output-batch-size</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-fetch-size</key>
+                <value>
+                    <name>esql-fetch-size</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-auto-commit</key>
+                <value>
+                    <name>esql-auto-commit</name>
+                </value>
+            </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+            <entry>
+                <key>Database Connection Pooling Service</key>
+                <value>058d8308-529b-3683-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>sql-pre-query</key>
+            </entry>
+            <entry>
+                <key>SQL select query</key>
+                <value>SELECT DISTINCT
+    SAOR.increment_id AS order_id,
+    SAOR.customer_email AS customer_email, 
+    AOAEV.value AS col_update_ts,
+    CURRENT_TIMESTAMP() AS processing_dt,
+    SAOR.STATUS AS status
+    FROM 
+      amasty_order_attribute_entity AS AOAE 
+      LEFT JOIN amasty_order_attribute_entity_varchar AS AOAEV
+      ON AOAE.entity_id = AOAEV.entity_id
+      LEFT JOIN sales_order AS SAOR
+      ON SAOR.entity_id =AOAE.parent_id
+    WHERE
+      AOAE.parent_entity_type = 1
+      AND AOAEV.attribute_id =  324  
+      AND DATE( AOAEV.value) IS NOT NULL
+      AND SAOR.STATUS in ('processing', 'closed', 'complete')
+      AND SAOR.increment_id IS NOT NULL
+      AND AOAEV.value &gt;= (NOW() + INTERVAL 1 HOUR)</value>
+            </entry>
+            <entry>
+                <key>sql-post-query</key>
+            </entry>
+            <entry>
+                <key>Max Wait Time</key>
+                <value>0 seconds</value>
+            </entry>
+            <entry>
+                <key>dbf-normalize</key>
+                <value>false</value>
+            </entry>
+            <entry>
+                <key>dbf-user-logical-types</key>
+                <value>false</value>
+            </entry>
+            <entry>
+                <key>compression-format</key>
+                <value>NONE</value>
+            </entry>
+            <entry>
+                <key>dbf-default-precision</key>
+                <value>10</value>
+            </entry>
+            <entry>
+                <key>dbf-default-scale</key>
+                <value>0</value>
+            </entry>
+            <entry>
+                <key>esql-max-rows</key>
+                <value>10</value>
+            </entry>
+            <entry>
+                <key>esql-output-batch-size</key>
+                <value>0</value>
+            </entry>
+            <entry>
+                <key>esql-fetch-size</key>
+                <value>0</value>
+            </entry>
+            <entry>
+                <key>esql-auto-commit</key>
+                <value>true</value>
+            </entry>
+        </properties>
+        <retryCount>10</retryCount>
+        <runDurationMillis>0</runDurationMillis>
+        <schedulingPeriod>0 0 2,8,14,20 * * ?</schedulingPeriod>
+        <schedulingStrategy>CRON_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+    </config>
+    <executionNodeRestricted>false</executionNodeRestricted>
+    <name>ExecuteSQL</name>
+    <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>failure</name>
+        <retry>false</retry>
+    </relationships>
+    <relationships>
+        <autoTerminate>false</autoTerminate>
+        <name>success</name>
+        <retry>false</retry>
+    </relationships>
+    <state>RUNNING</state>
+    <style/>
+    <type>org.apache.nifi.processors.standard.ExecuteSQL</type>
+</processors>
+                            </contents>
+                            <defaultBackPressureDataSizeThreshold>1 GB</defaultBackPressureDataSizeThreshold>
+                            <defaultBackPressureObjectThreshold>10000</defaultBackPressureObjectThreshold>
+                            <defaultFlowFileExpiration>0 sec</defaultFlowFileExpiration>
+                            <flowfileConcurrency>UNBOUNDED</flowfileConcurrency>
+                            <flowfileOutboundPolicy>STREAM_WHEN_AVAILABLE</flowfileOutboundPolicy>
+                            <name>m2_email_chk_PARTIAL</name>
+                            <variables/>
+                        </processGroups>
+                        <processGroups>
+                            <id>07d057cc-db0c-381f-0000-000000000000</id>
+                            <parentGroupId>0a3e95dc-422d-39cb-0000-000000000000</parentGroupId>
+                            <position>
+<x>256.0</x>
+<y>40.0</y>
+                            </position>
+                            <versionedComponentId>07d057cc-db0c-381f-9583-c6534398c6a6</versionedComponentId>
+                            <comments></comments>
+                            <contents>
+<connections>
+    <id>ded5d947-e181-3b78-0000-000000000000</id>
+    <parentGroupId>07d057cc-db0c-381f-0000-000000000000</parentGroupId>
+    <versionedComponentId>ded5d947-e181-3b78-be37-6e08ead1efe0</versionedComponentId>
+    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+    <destination>
+        <groupId>07d057cc-db0c-381f-0000-000000000000</groupId>
+        <id>45b58bb2-9110-3f90-0000-000000000000</id>
+        <type>PROCESSOR</type>
+        <versionedComponentId>45b58bb2-9110-3f90-8f7d-060b16c5c758</versionedComponentId>
+    </destination>
+    <flowFileExpiration>0 sec</flowFileExpiration>
+    <labelIndex>1</labelIndex>
+    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+    <name></name>
+    <selectedRelationships>success</selectedRelationships>
+    <source>
+        <groupId>07d057cc-db0c-381f-0000-000000000000</groupId>
+        <id>20d969c5-4c92-32a8-0000-000000000000</id>
+        <type>PROCESSOR</type>
+        <versionedComponentId>20d969c5-4c92-32a8-843a-208250b1f9f7</versionedComponentId>
+    </source>
+    <zIndex>0</zIndex>
+</connections>
+<processors>
+    <id>20d969c5-4c92-32a8-0000-000000000000</id>
+    <parentGroupId>07d057cc-db0c-381f-0000-000000000000</parentGroupId>
+    <position>
+        <x>512.0</x>
+        <y>136.0</y>
+    </position>
+    <versionedComponentId>20d969c5-4c92-32a8-843a-208250b1f9f7</versionedComponentId>
+    <bundle>
+        <artifact>nifi-standard-nar</artifact>
+        <group>org.apache.nifi</group>
+        <version>1.17.0</version>
+    </bundle>
+    <config>
+        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+        <bulletinLevel>WARN</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <descriptors>
+            <entry>
+                <key>Database Connection Pooling Service</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.dbcp.DBCPService</identifiesControllerService>
+                    <name>Database Connection Pooling Service</name>
+                </value>
+            </entry>
+            <entry>
+                <key>sql-pre-query</key>
+                <value>
+                    <name>sql-pre-query</name>
+                </value>
+            </entry>
+            <entry>
+                <key>SQL select query</key>
+                <value>
+                    <name>SQL select query</name>
+                </value>
+            </entry>
+            <entry>
+                <key>sql-post-query</key>
+                <value>
+                    <name>sql-post-query</name>
+                </value>
+            </entry>
+            <entry>
+                <key>Max Wait Time</key>
+                <value>
+                    <name>Max Wait Time</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-normalize</key>
+                <value>
+                    <name>dbf-normalize</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-user-logical-types</key>
+                <value>
+                    <name>dbf-user-logical-types</name>
+                </value>
+            </entry>
+            <entry>
+                <key>compression-format</key>
+                <value>
+                    <name>compression-format</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-default-precision</key>
+                <value>
+                    <name>dbf-default-precision</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-default-scale</key>
+                <value>
+                    <name>dbf-default-scale</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-max-rows</key>
+                <value>
+                    <name>esql-max-rows</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-output-batch-size</key>
+                <value>
+                    <name>esql-output-batch-size</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-fetch-size</key>
+                <value>
+                    <name>esql-fetch-size</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-auto-commit</key>
+                <value>
+                    <name>esql-auto-commit</name>
+                </value>
+            </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+            <entry>
+                <key>Database Connection Pooling Service</key>
+                <value>058d8308-529b-3683-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>sql-pre-query</key>
+            </entry>
+            <entry>
+                <key>SQL select query</key>
+                <value>SELECT DISTINCT
+    SAOR.increment_id AS order_id,
+    SAOR.customer_email AS customer_email, 
+    AOAEV.value AS col_update_ts,
+    CURRENT_TIMESTAMP() AS processing_dt,
+    SAOR.STATUS AS status
+    FROM 
+      amasty_order_attribute_entity AS AOAE 
+      LEFT JOIN amasty_order_attribute_entity_varchar AS AOAEV
+      ON AOAE.entity_id = AOAEV.entity_id
+      LEFT JOIN sales_order AS SAOR
+      ON SAOR.entity_id =AOAE.parent_id
+    WHERE
+      AOAE.parent_entity_type = 1
+      AND AOAEV.attribute_id =  324  
+      AND DATE( AOAEV.value) IS NOT NULL
+      AND SAOR.STATUS in ('processing', 'closed', 'complete')
+      AND SAOR.increment_id IS NOT NULL
+      -- AND AOAEV.value &gt;= (NOW() + INTERVAL 1 HOUR)
+      AND SAOR.increment_id = '230316230105'</value>
+            </entry>
+            <entry>
+                <key>sql-post-query</key>
+            </entry>
+            <entry>
+                <key>Max Wait Time</key>
+                <value>0 seconds</value>
+            </entry>
+            <entry>
+                <key>dbf-normalize</key>
+                <value>false</value>
+            </entry>
+            <entry>
+                <key>dbf-user-logical-types</key>
+                <value>false</value>
+            </entry>
+            <entry>
+                <key>compression-format</key>
+                <value>NONE</value>
+            </entry>
+            <entry>
+                <key>dbf-default-precision</key>
+                <value>10</value>
+            </entry>
+            <entry>
+                <key>dbf-default-scale</key>
+                <value>0</value>
+            </entry>
+            <entry>
+                <key>esql-max-rows</key>
+                <value>10</value>
+            </entry>
+            <entry>
+                <key>esql-output-batch-size</key>
+                <value>0</value>
+            </entry>
+            <entry>
+                <key>esql-fetch-size</key>
+                <value>0</value>
+            </entry>
+            <entry>
+                <key>esql-auto-commit</key>
+                <value>true</value>
+            </entry>
+        </properties>
+        <retryCount>10</retryCount>
+        <runDurationMillis>0</runDurationMillis>
+        <schedulingPeriod>0 48 1,7,13,19 * * ?</schedulingPeriod>
+        <schedulingStrategy>CRON_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+    </config>
+    <executionNodeRestricted>false</executionNodeRestricted>
+    <name>ExecuteSQL</name>
+    <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>failure</name>
+        <retry>false</retry>
+    </relationships>
+    <relationships>
+        <autoTerminate>false</autoTerminate>
+        <name>success</name>
+        <retry>false</retry>
+    </relationships>
+    <state>STOPPED</state>
+    <style/>
+    <type>org.apache.nifi.processors.standard.ExecuteSQL</type>
+</processors>
+<processors>
+    <id>45b58bb2-9110-3f90-0000-000000000000</id>
+    <parentGroupId>07d057cc-db0c-381f-0000-000000000000</parentGroupId>
+    <position>
+        <x>512.0</x>
+        <y>336.0</y>
+    </position>
+    <versionedComponentId>45b58bb2-9110-3f90-8f7d-060b16c5c758</versionedComponentId>
+    <bundle>
+        <artifact>nifi-gcp-nar</artifact>
+        <group>org.apache.nifi</group>
+        <version>1.17.0</version>
+    </bundle>
+    <config>
+        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+        <bulletinLevel>WARN</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <descriptors>
+            <entry>
+                <key>gcp-project-id</key>
+                <value>
+                    <name>gcp-project-id</name>
+                </value>
+            </entry>
+            <entry>
+                <key>GCP Credentials Provider Service</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.gcp.credentials.service.GCPCredentialsService</identifiesControllerService>
+                    <name>GCP Credentials Provider Service</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-retry-count</key>
+                <value>
+                    <name>gcp-retry-count</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-host</key>
+                <value>
+                    <name>gcp-proxy-host</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-port</key>
+                <value>
+                    <name>gcp-proxy-port</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-name</key>
+                <value>
+                    <name>gcp-proxy-user-name</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-password</key>
+                <value>
+                    <name>gcp-proxy-user-password</name>
+                </value>
+            </entry>
+            <entry>
+                <key>proxy-configuration-service</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+                    <name>proxy-configuration-service</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.dataset</key>
+                <value>
+                    <name>bq.dataset</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.table.name</key>
+                <value>
+                    <name>bq.table.name</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.load.ignore_unknown</key>
+                <value>
+                    <name>bq.load.ignore_unknown</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.record.reader</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.serialization.RecordReaderFactory</identifiesControllerService>
+                    <name>bq.record.reader</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.skip.invalid.rows</key>
+                <value>
+                    <name>bq.skip.invalid.rows</name>
+                </value>
+            </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+            <entry>
+                <key>gcp-project-id</key>
+                <value>#{BQ.projectID}</value>
+            </entry>
+            <entry>
+                <key>GCP Credentials Provider Service</key>
+                <value>4e66742d-2808-3826-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>gcp-retry-count</key>
+                <value>6</value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-host</key>
+            </entry>
+            <entry>
+                <key>gcp-proxy-port</key>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-name</key>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-password</key>
+            </entry>
+            <entry>
+                <key>proxy-configuration-service</key>
+            </entry>
+            <entry>
+                <key>bq.dataset</key>
+                <value>#{BQ.m2Dataset}</value>
+            </entry>
+            <entry>
+                <key>bq.table.name</key>
+                <value>#{BQ.m2.dup.m2_email}</value>
+            </entry>
+            <entry>
+                <key>bq.load.ignore_unknown</key>
+                <value>false</value>
+            </entry>
+            <entry>
+                <key>bq.record.reader</key>
+                <value>85fc3128-cecb-34ea-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>bq.skip.invalid.rows</key>
+                <value>false</value>
+            </entry>
+        </properties>
+        <retryCount>10</retryCount>
+        <runDurationMillis>0</runDurationMillis>
+        <schedulingPeriod>0 sec</schedulingPeriod>
+        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+    </config>
+    <executionNodeRestricted>false</executionNodeRestricted>
+    <name>PutBigQueryStreaming</name>
+    <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>failure</name>
+        <retry>false</retry>
+    </relationships>
+    <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>success</name>
+        <retry>false</retry>
+    </relationships>
+    <state>STOPPED</state>
+    <style/>
+    <type>org.apache.nifi.processors.gcp.bigquery.PutBigQueryStreaming</type>
+</processors>
+                            </contents>
+                            <defaultBackPressureDataSizeThreshold>1 GB</defaultBackPressureDataSizeThreshold>
+                            <defaultBackPressureObjectThreshold>10000</defaultBackPressureObjectThreshold>
+                            <defaultFlowFileExpiration>0 sec</defaultFlowFileExpiration>
+                            <flowfileConcurrency>UNBOUNDED</flowfileConcurrency>
+                            <flowfileOutboundPolicy>STREAM_WHEN_AVAILABLE</flowfileOutboundPolicy>
+                            <name>m2_email_chk_test</name>
+                            <variables/>
+                        </processGroups>
+                    </contents>
+                    <defaultBackPressureDataSizeThreshold>1 GB</defaultBackPressureDataSizeThreshold>
+                    <defaultBackPressureObjectThreshold>10000</defaultBackPressureObjectThreshold>
+                    <defaultFlowFileExpiration>0 sec</defaultFlowFileExpiration>
+                    <flowfileConcurrency>UNBOUNDED</flowfileConcurrency>
+                    <flowfileOutboundPolicy>STREAM_WHEN_AVAILABLE</flowfileOutboundPolicy>
+                    <name>m2_email_chk</name>
+                    <variables/>
+                </processGroups>
+                <processGroups>
+                    <id>0c1aa620-5a90-33af-0000-000000000000</id>
+                    <parentGroupId>8f8a2f97-959c-3ff6-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>464.0000260437903</x>
+                        <y>123.99999916789983</y>
+                    </position>
+                    <versionedComponentId>0c1aa620-5a90-33af-8883-259ab78a23b2</versionedComponentId>
+                    <comments></comments>
+                    <contents>
+                        <processGroups>
+                            <id>9ede8420-d562-30a8-0000-000000000000</id>
+                            <parentGroupId>0c1aa620-5a90-33af-0000-000000000000</parentGroupId>
+                            <position>
+<x>864.0</x>
+<y>96.0</y>
+                            </position>
+                            <versionedComponentId>9ede8420-d562-30a8-98c2-03bc0fc12710</versionedComponentId>
+                            <comments></comments>
+                            <contents>
+<connections>
+    <id>c0ef02a0-1846-3945-0000-000000000000</id>
+    <parentGroupId>9ede8420-d562-30a8-0000-000000000000</parentGroupId>
+    <versionedComponentId>c0ef02a0-1846-3945-8b63-c8ff220aaade</versionedComponentId>
+    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+    <destination>
+        <groupId>9ede8420-d562-30a8-0000-000000000000</groupId>
+        <id>2645140a-5e60-365b-0000-000000000000</id>
+        <type>PROCESSOR</type>
+        <versionedComponentId>2645140a-5e60-365b-94e6-26306da2949a</versionedComponentId>
+    </destination>
+    <flowFileExpiration>0 sec</flowFileExpiration>
+    <labelIndex>1</labelIndex>
+    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+    <name></name>
+    <selectedRelationships>count_gt_zero</selectedRelationships>
+    <source>
+        <groupId>9ede8420-d562-30a8-0000-000000000000</groupId>
+        <id>451ed8c9-492d-3c93-0000-000000000000</id>
+        <type>PROCESSOR</type>
+        <versionedComponentId>451ed8c9-492d-3c93-b7f0-b7b48bfc93c6</versionedComponentId>
+    </source>
+    <zIndex>0</zIndex>
+</connections>
+<connections>
+    <id>d56e97cc-0562-390b-0000-000000000000</id>
+    <parentGroupId>9ede8420-d562-30a8-0000-000000000000</parentGroupId>
+    <versionedComponentId>d56e97cc-0562-390b-8cfc-64db926c67fe</versionedComponentId>
+    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+    <destination>
+        <groupId>9ede8420-d562-30a8-0000-000000000000</groupId>
+        <id>451ed8c9-492d-3c93-0000-000000000000</id>
+        <type>PROCESSOR</type>
+        <versionedComponentId>451ed8c9-492d-3c93-b7f0-b7b48bfc93c6</versionedComponentId>
+    </destination>
+    <flowFileExpiration>0 sec</flowFileExpiration>
+    <labelIndex>1</labelIndex>
+    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+    <name></name>
+    <selectedRelationships>success</selectedRelationships>
+    <source>
+        <groupId>9ede8420-d562-30a8-0000-000000000000</groupId>
+        <id>0e48e892-b174-3190-0000-000000000000</id>
+        <type>PROCESSOR</type>
+        <versionedComponentId>0e48e892-b174-3190-81ae-63ba2a397d84</versionedComponentId>
+    </source>
+    <zIndex>0</zIndex>
+</connections>
+<processors>
+    <id>0e48e892-b174-3190-0000-000000000000</id>
+    <parentGroupId>9ede8420-d562-30a8-0000-000000000000</parentGroupId>
+    <position>
+        <x>512.0</x>
+        <y>136.0</y>
+    </position>
+    <versionedComponentId>0e48e892-b174-3190-81ae-63ba2a397d84</versionedComponentId>
+    <bundle>
+        <artifact>nifi-standard-nar</artifact>
+        <group>org.apache.nifi</group>
+        <version>1.17.0</version>
+    </bundle>
+    <config>
+        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+        <bulletinLevel>WARN</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <descriptors>
+            <entry>
+                <key>Database Connection Pooling Service</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.dbcp.DBCPService</identifiesControllerService>
+                    <name>Database Connection Pooling Service</name>
+                </value>
+            </entry>
+            <entry>
+                <key>sql-pre-query</key>
+                <value>
+                    <name>sql-pre-query</name>
+                </value>
+            </entry>
+            <entry>
+                <key>SQL select query</key>
+                <value>
+                    <name>SQL select query</name>
+                </value>
+            </entry>
+            <entry>
+                <key>sql-post-query</key>
+                <value>
+                    <name>sql-post-query</name>
+                </value>
+            </entry>
+            <entry>
+                <key>Max Wait Time</key>
+                <value>
+                    <name>Max Wait Time</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-normalize</key>
+                <value>
+                    <name>dbf-normalize</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-user-logical-types</key>
+                <value>
+                    <name>dbf-user-logical-types</name>
+                </value>
+            </entry>
+            <entry>
+                <key>compression-format</key>
+                <value>
+                    <name>compression-format</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-default-precision</key>
+                <value>
+                    <name>dbf-default-precision</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-default-scale</key>
+                <value>
+                    <name>dbf-default-scale</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-max-rows</key>
+                <value>
+                    <name>esql-max-rows</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-output-batch-size</key>
+                <value>
+                    <name>esql-output-batch-size</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-fetch-size</key>
+                <value>
+                    <name>esql-fetch-size</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-auto-commit</key>
+                <value>
+                    <name>esql-auto-commit</name>
+                </value>
+            </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+            <entry>
+                <key>Database Connection Pooling Service</key>
+                <value>058d8308-529b-3683-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>sql-pre-query</key>
+            </entry>
+            <entry>
+                <key>SQL select query</key>
+                <value>SELECT 
+	id, user_username, user_id, user_name, user_is_active, customer_id, customer_uuid, type, friend_flag, maac_uri, created_at, updated_at, CONVERT_TZ(CURRENT_TIMESTAMP,'+00:00','+8:00') AS 'processing_dt'
+FROM 
+	mrl_sociallogin_invite
+WHERE
+    DATE_ADD(CURRENT_TIMESTAMP,INTERVAL -2 DAY) &lt;= updated_at</value>
+            </entry>
+            <entry>
+                <key>sql-post-query</key>
+            </entry>
+            <entry>
+                <key>Max Wait Time</key>
+                <value>0 seconds</value>
+            </entry>
+            <entry>
+                <key>dbf-normalize</key>
+                <value>false</value>
+            </entry>
+            <entry>
+                <key>dbf-user-logical-types</key>
+                <value>false</value>
+            </entry>
+            <entry>
+                <key>compression-format</key>
+                <value>NONE</value>
+            </entry>
+            <entry>
+                <key>dbf-default-precision</key>
+                <value>10</value>
+            </entry>
+            <entry>
+                <key>dbf-default-scale</key>
+                <value>0</value>
+            </entry>
+            <entry>
+                <key>esql-max-rows</key>
+                <value>10</value>
+            </entry>
+            <entry>
+                <key>esql-output-batch-size</key>
+                <value>0</value>
+            </entry>
+            <entry>
+                <key>esql-fetch-size</key>
+                <value>0</value>
+            </entry>
+            <entry>
+                <key>esql-auto-commit</key>
+                <value>true</value>
+            </entry>
+        </properties>
+        <retryCount>10</retryCount>
+        <runDurationMillis>0</runDurationMillis>
+        <schedulingPeriod>0 48 1,7,13,19 * * ?</schedulingPeriod>
+        <schedulingStrategy>CRON_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+    </config>
+    <executionNodeRestricted>false</executionNodeRestricted>
+    <name>ExecuteSQL</name>
+    <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>failure</name>
+        <retry>false</retry>
+    </relationships>
+    <relationships>
+        <autoTerminate>false</autoTerminate>
+        <name>success</name>
+        <retry>false</retry>
+    </relationships>
+    <state>RUNNING</state>
+    <style/>
+    <type>org.apache.nifi.processors.standard.ExecuteSQL</type>
+</processors>
+<processors>
+    <id>2645140a-5e60-365b-0000-000000000000</id>
+    <parentGroupId>9ede8420-d562-30a8-0000-000000000000</parentGroupId>
+    <position>
+        <x>512.0</x>
+        <y>456.0</y>
+    </position>
+    <versionedComponentId>2645140a-5e60-365b-94e6-26306da2949a</versionedComponentId>
+    <bundle>
+        <artifact>nifi-gcp-nar</artifact>
+        <group>org.apache.nifi</group>
+        <version>1.17.0</version>
+    </bundle>
+    <config>
+        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+        <bulletinLevel>WARN</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <descriptors>
+            <entry>
+                <key>gcp-project-id</key>
+                <value>
+                    <name>gcp-project-id</name>
+                </value>
+            </entry>
+            <entry>
+                <key>GCP Credentials Provider Service</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.gcp.credentials.service.GCPCredentialsService</identifiesControllerService>
+                    <name>GCP Credentials Provider Service</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-retry-count</key>
+                <value>
+                    <name>gcp-retry-count</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-host</key>
+                <value>
+                    <name>gcp-proxy-host</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-port</key>
+                <value>
+                    <name>gcp-proxy-port</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-name</key>
+                <value>
+                    <name>gcp-proxy-user-name</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-password</key>
+                <value>
+                    <name>gcp-proxy-user-password</name>
+                </value>
+            </entry>
+            <entry>
+                <key>proxy-configuration-service</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+                    <name>proxy-configuration-service</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.dataset</key>
+                <value>
+                    <name>bq.dataset</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.table.name</key>
+                <value>
+                    <name>bq.table.name</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.load.ignore_unknown</key>
+                <value>
+                    <name>bq.load.ignore_unknown</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.record.reader</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.serialization.RecordReaderFactory</identifiesControllerService>
+                    <name>bq.record.reader</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.skip.invalid.rows</key>
+                <value>
+                    <name>bq.skip.invalid.rows</name>
+                </value>
+            </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+            <entry>
+                <key>gcp-project-id</key>
+                <value>#{BQ.projectID}</value>
+            </entry>
+            <entry>
+                <key>GCP Credentials Provider Service</key>
+                <value>4e66742d-2808-3826-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>gcp-retry-count</key>
+                <value>6</value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-host</key>
+            </entry>
+            <entry>
+                <key>gcp-proxy-port</key>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-name</key>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-password</key>
+            </entry>
+            <entry>
+                <key>proxy-configuration-service</key>
+            </entry>
+            <entry>
+                <key>bq.dataset</key>
+                <value>#{BQ.m2Dataset}</value>
+            </entry>
+            <entry>
+                <key>bq.table.name</key>
+                <value>#{BQ.m2.dup.mrl_sociallogin_invite}</value>
+            </entry>
+            <entry>
+                <key>bq.load.ignore_unknown</key>
+                <value>false</value>
+            </entry>
+            <entry>
+                <key>bq.record.reader</key>
+                <value>85fc3128-cecb-34ea-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>bq.skip.invalid.rows</key>
+                <value>false</value>
+            </entry>
+        </properties>
+        <retryCount>10</retryCount>
+        <runDurationMillis>0</runDurationMillis>
+        <schedulingPeriod>0 sec</schedulingPeriod>
+        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+    </config>
+    <executionNodeRestricted>false</executionNodeRestricted>
+    <name>PutBigQueryStreaming</name>
+    <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>failure</name>
+        <retry>false</retry>
+    </relationships>
+    <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>success</name>
+        <retry>false</retry>
+    </relationships>
+    <state>RUNNING</state>
+    <style/>
+    <type>org.apache.nifi.processors.gcp.bigquery.PutBigQueryStreaming</type>
+</processors>
+<processors>
+    <id>451ed8c9-492d-3c93-0000-000000000000</id>
+    <parentGroupId>9ede8420-d562-30a8-0000-000000000000</parentGroupId>
+    <position>
+        <x>512.0</x>
+        <y>296.0</y>
+    </position>
+    <versionedComponentId>451ed8c9-492d-3c93-b7f0-b7b48bfc93c6</versionedComponentId>
+    <bundle>
+        <artifact>nifi-standard-nar</artifact>
+        <group>org.apache.nifi</group>
+        <version>1.17.0</version>
+    </bundle>
+    <config>
+        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+        <bulletinLevel>WARN</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <descriptors>
+            <entry>
+                <key>Routing Strategy</key>
+                <value>
+                    <name>Routing Strategy</name>
+                </value>
+            </entry>
+            <entry>
+                <key>count_gt_zero</key>
+                <value>
+                    <name>count_gt_zero</name>
+                </value>
+            </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+            <entry>
+                <key>Routing Strategy</key>
+                <value>Route to Property name</value>
+            </entry>
+            <entry>
+                <key>count_gt_zero</key>
+                <value>${executesql.row.count:replaceNull(0):gt(0)}</value>
+            </entry>
+        </properties>
+        <retryCount>10</retryCount>
+        <runDurationMillis>0</runDurationMillis>
+        <schedulingPeriod>0 sec</schedulingPeriod>
+        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+    </config>
+    <executionNodeRestricted>false</executionNodeRestricted>
+    <name>RouteOnAttribute</name>
+    <relationships>
+        <autoTerminate>false</autoTerminate>
+        <name>count_gt_zero</name>
+        <retry>false</retry>
+    </relationships>
+    <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>unmatched</name>
+        <retry>false</retry>
+    </relationships>
+    <state>RUNNING</state>
+    <style/>
+    <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
+</processors>
+                            </contents>
+                            <defaultBackPressureDataSizeThreshold>1 GB</defaultBackPressureDataSizeThreshold>
+                            <defaultBackPressureObjectThreshold>10000</defaultBackPressureObjectThreshold>
+                            <defaultFlowFileExpiration>0 sec</defaultFlowFileExpiration>
+                            <flowfileConcurrency>UNBOUNDED</flowfileConcurrency>
+                            <flowfileOutboundPolicy>STREAM_WHEN_AVAILABLE</flowfileOutboundPolicy>
+                            <name>mrl_sociallogin_invite_PARTIAL</name>
+                            <variables/>
+                        </processGroups>
+                        <processGroups>
+                            <id>ae60d20e-092f-3e63-0000-000000000000</id>
+                            <parentGroupId>0c1aa620-5a90-33af-0000-000000000000</parentGroupId>
+                            <position>
+<x>442.1875069432617</x>
+<y>94.55807999066087</y>
+                            </position>
+                            <versionedComponentId>ae60d20e-092f-3e63-9a89-ed05808159c2</versionedComponentId>
+                            <comments></comments>
+                            <contents>
+<connections>
+    <id>b1625c17-28de-303b-0000-000000000000</id>
+    <parentGroupId>ae60d20e-092f-3e63-0000-000000000000</parentGroupId>
+    <versionedComponentId>b1625c17-28de-303b-8d5f-da27edb60283</versionedComponentId>
+    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+    <destination>
+        <groupId>ae60d20e-092f-3e63-0000-000000000000</groupId>
+        <id>6e7770e2-34de-3cfa-0000-000000000000</id>
+        <type>PROCESSOR</type>
+        <versionedComponentId>6e7770e2-34de-3cfa-a257-3c55792898e8</versionedComponentId>
+    </destination>
+    <flowFileExpiration>0 sec</flowFileExpiration>
+    <labelIndex>1</labelIndex>
+    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+    <name></name>
+    <selectedRelationships>success</selectedRelationships>
+    <source>
+        <groupId>ae60d20e-092f-3e63-0000-000000000000</groupId>
+        <id>99d20088-0588-3828-0000-000000000000</id>
+        <type>PROCESSOR</type>
+        <versionedComponentId>99d20088-0588-3828-81d9-d91c68ecc2b0</versionedComponentId>
+    </source>
+    <zIndex>0</zIndex>
+</connections>
+<processors>
+    <id>6e7770e2-34de-3cfa-0000-000000000000</id>
+    <parentGroupId>ae60d20e-092f-3e63-0000-000000000000</parentGroupId>
+    <position>
+        <x>512.0</x>
+        <y>336.0</y>
+    </position>
+    <versionedComponentId>6e7770e2-34de-3cfa-a257-3c55792898e8</versionedComponentId>
+    <bundle>
+        <artifact>nifi-gcp-nar</artifact>
+        <group>org.apache.nifi</group>
+        <version>1.17.0</version>
+    </bundle>
+    <config>
+        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+        <bulletinLevel>WARN</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <descriptors>
+            <entry>
+                <key>gcp-project-id</key>
+                <value>
+                    <name>gcp-project-id</name>
+                </value>
+            </entry>
+            <entry>
+                <key>GCP Credentials Provider Service</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.gcp.credentials.service.GCPCredentialsService</identifiesControllerService>
+                    <name>GCP Credentials Provider Service</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-retry-count</key>
+                <value>
+                    <name>gcp-retry-count</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-host</key>
+                <value>
+                    <name>gcp-proxy-host</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-port</key>
+                <value>
+                    <name>gcp-proxy-port</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-name</key>
+                <value>
+                    <name>gcp-proxy-user-name</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-password</key>
+                <value>
+                    <name>gcp-proxy-user-password</name>
+                </value>
+            </entry>
+            <entry>
+                <key>proxy-configuration-service</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+                    <name>proxy-configuration-service</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.dataset</key>
+                <value>
+                    <name>bq.dataset</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.table.name</key>
+                <value>
+                    <name>bq.table.name</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.load.ignore_unknown</key>
+                <value>
+                    <name>bq.load.ignore_unknown</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.record.reader</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.serialization.RecordReaderFactory</identifiesControllerService>
+                    <name>bq.record.reader</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.skip.invalid.rows</key>
+                <value>
+                    <name>bq.skip.invalid.rows</name>
+                </value>
+            </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+            <entry>
+                <key>gcp-project-id</key>
+                <value>#{BQ.projectID}</value>
+            </entry>
+            <entry>
+                <key>GCP Credentials Provider Service</key>
+                <value>4e66742d-2808-3826-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>gcp-retry-count</key>
+                <value>6</value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-host</key>
+            </entry>
+            <entry>
+                <key>gcp-proxy-port</key>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-name</key>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-password</key>
+            </entry>
+            <entry>
+                <key>proxy-configuration-service</key>
+            </entry>
+            <entry>
+                <key>bq.dataset</key>
+                <value>#{BQ.m2Dataset}</value>
+            </entry>
+            <entry>
+                <key>bq.table.name</key>
+                <value>#{BQ.m2.dup.mrl_sociallogin_invite}</value>
+            </entry>
+            <entry>
+                <key>bq.load.ignore_unknown</key>
+                <value>false</value>
+            </entry>
+            <entry>
+                <key>bq.record.reader</key>
+                <value>85fc3128-cecb-34ea-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>bq.skip.invalid.rows</key>
+                <value>false</value>
+            </entry>
+        </properties>
+        <retryCount>10</retryCount>
+        <runDurationMillis>0</runDurationMillis>
+        <schedulingPeriod>0 sec</schedulingPeriod>
+        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+    </config>
+    <executionNodeRestricted>false</executionNodeRestricted>
+    <name>PutBigQueryStreaming</name>
+    <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>failure</name>
+        <retry>false</retry>
+    </relationships>
+    <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>success</name>
+        <retry>false</retry>
+    </relationships>
+    <state>STOPPED</state>
+    <style/>
+    <type>org.apache.nifi.processors.gcp.bigquery.PutBigQueryStreaming</type>
+</processors>
+<processors>
+    <id>99d20088-0588-3828-0000-000000000000</id>
+    <parentGroupId>ae60d20e-092f-3e63-0000-000000000000</parentGroupId>
+    <position>
+        <x>515.9999993138672</x>
+        <y>138.000005039489</y>
+    </position>
+    <versionedComponentId>99d20088-0588-3828-81d9-d91c68ecc2b0</versionedComponentId>
+    <bundle>
+        <artifact>nifi-standard-nar</artifact>
+        <group>org.apache.nifi</group>
+        <version>1.17.0</version>
+    </bundle>
+    <config>
+        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+        <bulletinLevel>WARN</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <descriptors>
+            <entry>
+                <key>Database Connection Pooling Service</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.dbcp.DBCPService</identifiesControllerService>
+                    <name>Database Connection Pooling Service</name>
+                </value>
+            </entry>
+            <entry>
+                <key>sql-pre-query</key>
+                <value>
+                    <name>sql-pre-query</name>
+                </value>
+            </entry>
+            <entry>
+                <key>SQL select query</key>
+                <value>
+                    <name>SQL select query</name>
+                </value>
+            </entry>
+            <entry>
+                <key>sql-post-query</key>
+                <value>
+                    <name>sql-post-query</name>
+                </value>
+            </entry>
+            <entry>
+                <key>Max Wait Time</key>
+                <value>
+                    <name>Max Wait Time</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-normalize</key>
+                <value>
+                    <name>dbf-normalize</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-user-logical-types</key>
+                <value>
+                    <name>dbf-user-logical-types</name>
+                </value>
+            </entry>
+            <entry>
+                <key>compression-format</key>
+                <value>
+                    <name>compression-format</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-default-precision</key>
+                <value>
+                    <name>dbf-default-precision</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-default-scale</key>
+                <value>
+                    <name>dbf-default-scale</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-max-rows</key>
+                <value>
+                    <name>esql-max-rows</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-output-batch-size</key>
+                <value>
+                    <name>esql-output-batch-size</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-fetch-size</key>
+                <value>
+                    <name>esql-fetch-size</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-auto-commit</key>
+                <value>
+                    <name>esql-auto-commit</name>
+                </value>
+            </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+            <entry>
+                <key>Database Connection Pooling Service</key>
+                <value>058d8308-529b-3683-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>sql-pre-query</key>
+            </entry>
+            <entry>
+                <key>SQL select query</key>
+                <value>SELECT 
+	id, user_username, user_id, user_name, user_is_active, customer_id, customer_uuid, type, friend_flag, maac_uri, created_at, updated_at, CONVERT_TZ(CURRENT_TIMESTAMP,'+00:00','+8:00') AS 'processing_dt'
+FROM 
+	mrl_sociallogin_invite</value>
+            </entry>
+            <entry>
+                <key>sql-post-query</key>
+            </entry>
+            <entry>
+                <key>Max Wait Time</key>
+                <value>0 seconds</value>
+            </entry>
+            <entry>
+                <key>dbf-normalize</key>
+                <value>false</value>
+            </entry>
+            <entry>
+                <key>dbf-user-logical-types</key>
+                <value>false</value>
+            </entry>
+            <entry>
+                <key>compression-format</key>
+                <value>NONE</value>
+            </entry>
+            <entry>
+                <key>dbf-default-precision</key>
+                <value>10</value>
+            </entry>
+            <entry>
+                <key>dbf-default-scale</key>
+                <value>0</value>
+            </entry>
+            <entry>
+                <key>esql-max-rows</key>
+                <value>0</value>
+            </entry>
+            <entry>
+                <key>esql-output-batch-size</key>
+                <value>0</value>
+            </entry>
+            <entry>
+                <key>esql-fetch-size</key>
+                <value>0</value>
+            </entry>
+            <entry>
+                <key>esql-auto-commit</key>
+                <value>true</value>
+            </entry>
+        </properties>
+        <retryCount>10</retryCount>
+        <runDurationMillis>0</runDurationMillis>
+        <schedulingPeriod>0 sec</schedulingPeriod>
+        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+    </config>
+    <executionNodeRestricted>false</executionNodeRestricted>
+    <name>ExecuteSQL</name>
+    <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>failure</name>
+        <retry>false</retry>
+    </relationships>
+    <relationships>
+        <autoTerminate>false</autoTerminate>
+        <name>success</name>
+        <retry>false</retry>
+    </relationships>
+    <state>STOPPED</state>
+    <style/>
+    <type>org.apache.nifi.processors.standard.ExecuteSQL</type>
+</processors>
+                            </contents>
+                            <defaultBackPressureDataSizeThreshold>1 GB</defaultBackPressureDataSizeThreshold>
+                            <defaultBackPressureObjectThreshold>10000</defaultBackPressureObjectThreshold>
+                            <defaultFlowFileExpiration>0 sec</defaultFlowFileExpiration>
+                            <flowfileConcurrency>UNBOUNDED</flowfileConcurrency>
+                            <flowfileOutboundPolicy>STREAM_WHEN_AVAILABLE</flowfileOutboundPolicy>
+                            <name>mrl_sociallogin_invite_test</name>
+                            <variables/>
+                        </processGroups>
+                    </contents>
+                    <defaultBackPressureDataSizeThreshold>1 GB</defaultBackPressureDataSizeThreshold>
+                    <defaultBackPressureObjectThreshold>10000</defaultBackPressureObjectThreshold>
+                    <defaultFlowFileExpiration>0 sec</defaultFlowFileExpiration>
+                    <flowfileConcurrency>UNBOUNDED</flowfileConcurrency>
+                    <flowfileOutboundPolicy>STREAM_WHEN_AVAILABLE</flowfileOutboundPolicy>
+                    <name>mrl_sociallogin_invite</name>
+                    <variables/>
+                </processGroups>
+                <processGroups>
+                    <id>70c4cfc2-9455-3663-0000-000000000000</id>
+                    <parentGroupId>8f8a2f97-959c-3ff6-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1024.0</x>
+                        <y>432.0</y>
+                    </position>
+                    <versionedComponentId>70c4cfc2-9455-3663-b228-f88096202076</versionedComponentId>
+                    <comments></comments>
+                    <contents>
+                        <processGroups>
+                            <id>43fb4fdf-3c17-31e7-0000-000000000000</id>
+                            <parentGroupId>70c4cfc2-9455-3663-0000-000000000000</parentGroupId>
+                            <position>
+<x>632.0</x>
+<y>56.0</y>
+                            </position>
+                            <versionedComponentId>43fb4fdf-3c17-31e7-ad7c-fd75bc62689e</versionedComponentId>
+                            <comments></comments>
+                            <contents>
+<connections>
+    <id>cef1f772-f646-3be9-0000-000000000000</id>
+    <parentGroupId>43fb4fdf-3c17-31e7-0000-000000000000</parentGroupId>
+    <versionedComponentId>cef1f772-f646-3be9-b9a5-73683ded9c0b</versionedComponentId>
+    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+    <destination>
+        <groupId>43fb4fdf-3c17-31e7-0000-000000000000</groupId>
+        <id>9fa5daa9-5fac-3b37-0000-000000000000</id>
+        <type>PROCESSOR</type>
+        <versionedComponentId>9fa5daa9-5fac-3b37-a8a7-6dc8cd1c2a1b</versionedComponentId>
+    </destination>
+    <flowFileExpiration>0 sec</flowFileExpiration>
+    <labelIndex>1</labelIndex>
+    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+    <name></name>
+    <selectedRelationships>success</selectedRelationships>
+    <source>
+        <groupId>43fb4fdf-3c17-31e7-0000-000000000000</groupId>
+        <id>a380c9b2-85d2-3f29-0000-000000000000</id>
+        <type>PROCESSOR</type>
+        <versionedComponentId>a380c9b2-85d2-3f29-85f4-d617e2f2547c</versionedComponentId>
+    </source>
+    <zIndex>0</zIndex>
+</connections>
+<processors>
+    <id>9fa5daa9-5fac-3b37-0000-000000000000</id>
+    <parentGroupId>43fb4fdf-3c17-31e7-0000-000000000000</parentGroupId>
+    <position>
+        <x>512.0</x>
+        <y>336.0</y>
+    </position>
+    <versionedComponentId>9fa5daa9-5fac-3b37-a8a7-6dc8cd1c2a1b</versionedComponentId>
+    <bundle>
+        <artifact>nifi-gcp-nar</artifact>
+        <group>org.apache.nifi</group>
+        <version>1.17.0</version>
+    </bundle>
+    <config>
+        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+        <bulletinLevel>WARN</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <descriptors>
+            <entry>
+                <key>gcp-project-id</key>
+                <value>
+                    <name>gcp-project-id</name>
+                </value>
+            </entry>
+            <entry>
+                <key>GCP Credentials Provider Service</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.gcp.credentials.service.GCPCredentialsService</identifiesControllerService>
+                    <name>GCP Credentials Provider Service</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-retry-count</key>
+                <value>
+                    <name>gcp-retry-count</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-host</key>
+                <value>
+                    <name>gcp-proxy-host</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-port</key>
+                <value>
+                    <name>gcp-proxy-port</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-name</key>
+                <value>
+                    <name>gcp-proxy-user-name</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-password</key>
+                <value>
+                    <name>gcp-proxy-user-password</name>
+                </value>
+            </entry>
+            <entry>
+                <key>proxy-configuration-service</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+                    <name>proxy-configuration-service</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.dataset</key>
+                <value>
+                    <name>bq.dataset</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.table.name</key>
+                <value>
+                    <name>bq.table.name</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.load.ignore_unknown</key>
+                <value>
+                    <name>bq.load.ignore_unknown</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.record.reader</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.serialization.RecordReaderFactory</identifiesControllerService>
+                    <name>bq.record.reader</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.skip.invalid.rows</key>
+                <value>
+                    <name>bq.skip.invalid.rows</name>
+                </value>
+            </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+            <entry>
+                <key>gcp-project-id</key>
+                <value>#{BQ.projectID}</value>
+            </entry>
+            <entry>
+                <key>GCP Credentials Provider Service</key>
+                <value>4e66742d-2808-3826-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>gcp-retry-count</key>
+                <value>6</value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-host</key>
+            </entry>
+            <entry>
+                <key>gcp-proxy-port</key>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-name</key>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-password</key>
+            </entry>
+            <entry>
+                <key>proxy-configuration-service</key>
+            </entry>
+            <entry>
+                <key>bq.dataset</key>
+                <value>#{BQ.m2Dataset}</value>
+            </entry>
+            <entry>
+                <key>bq.table.name</key>
+                <value>#{BQ.m2.dup_m2_customer_been_store}</value>
+            </entry>
+            <entry>
+                <key>bq.load.ignore_unknown</key>
+                <value>false</value>
+            </entry>
+            <entry>
+                <key>bq.record.reader</key>
+                <value>85fc3128-cecb-34ea-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>bq.skip.invalid.rows</key>
+                <value>false</value>
+            </entry>
+        </properties>
+        <retryCount>10</retryCount>
+        <runDurationMillis>0</runDurationMillis>
+        <schedulingPeriod>0 sec</schedulingPeriod>
+        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+    </config>
+    <executionNodeRestricted>false</executionNodeRestricted>
+    <name>PutBigQueryStreaming</name>
+    <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>failure</name>
+        <retry>false</retry>
+    </relationships>
+    <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>success</name>
+        <retry>false</retry>
+    </relationships>
+    <state>RUNNING</state>
+    <style/>
+    <type>org.apache.nifi.processors.gcp.bigquery.PutBigQueryStreaming</type>
+</processors>
+<processors>
+    <id>a380c9b2-85d2-3f29-0000-000000000000</id>
+    <parentGroupId>43fb4fdf-3c17-31e7-0000-000000000000</parentGroupId>
+    <position>
+        <x>512.0</x>
+        <y>136.0</y>
+    </position>
+    <versionedComponentId>a380c9b2-85d2-3f29-85f4-d617e2f2547c</versionedComponentId>
+    <bundle>
+        <artifact>nifi-standard-nar</artifact>
+        <group>org.apache.nifi</group>
+        <version>1.17.0</version>
+    </bundle>
+    <config>
+        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+        <bulletinLevel>WARN</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <descriptors>
+            <entry>
+                <key>Database Connection Pooling Service</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.dbcp.DBCPService</identifiesControllerService>
+                    <name>Database Connection Pooling Service</name>
+                </value>
+            </entry>
+            <entry>
+                <key>sql-pre-query</key>
+                <value>
+                    <name>sql-pre-query</name>
+                </value>
+            </entry>
+            <entry>
+                <key>SQL select query</key>
+                <value>
+                    <name>SQL select query</name>
+                </value>
+            </entry>
+            <entry>
+                <key>sql-post-query</key>
+                <value>
+                    <name>sql-post-query</name>
+                </value>
+            </entry>
+            <entry>
+                <key>Max Wait Time</key>
+                <value>
+                    <name>Max Wait Time</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-normalize</key>
+                <value>
+                    <name>dbf-normalize</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-user-logical-types</key>
+                <value>
+                    <name>dbf-user-logical-types</name>
+                </value>
+            </entry>
+            <entry>
+                <key>compression-format</key>
+                <value>
+                    <name>compression-format</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-default-precision</key>
+                <value>
+                    <name>dbf-default-precision</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-default-scale</key>
+                <value>
+                    <name>dbf-default-scale</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-max-rows</key>
+                <value>
+                    <name>esql-max-rows</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-output-batch-size</key>
+                <value>
+                    <name>esql-output-batch-size</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-fetch-size</key>
+                <value>
+                    <name>esql-fetch-size</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-auto-commit</key>
+                <value>
+                    <name>esql-auto-commit</name>
+                </value>
+            </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+            <entry>
+                <key>Database Connection Pooling Service</key>
+                <value>058d8308-529b-3683-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>sql-pre-query</key>
+            </entry>
+            <entry>
+                <key>SQL select query</key>
+                <value>SELECT DISTINCT
+	SAOR.increment_id AS order_id,
+	CURRENT_TIMESTAMP() AS processing_dt,
+    SAOR.status AS status,
+    order_been_store.value AS not_been_store,
+    order_update_ds.value AS order_update_ds
+FROM sales_order SAOR
+INNER JOIN 
+(
+	SELECT 
+		CASE 
+			WHEN value LIKE '%374%' THEN '已選'
+			ELSE '未選'
+		END AS value,
+		order_attri.parent_id AS entity_id
+		FROM amasty_order_attribute_entity_varchar option_value
+		INNER JOIN amasty_order_attribute_grid_flat order_attri
+        ON option_value.entity_id = order_attri.entity_id
+        WHERE option_value.attribute_id = 300 AND value IS NOT NULL 
+) AS order_been_store
+ON SAOR.entity_id = order_been_store.entity_id
+INNER JOIN 
+(
+	SELECT 
+		value,
+		order_attri.parent_id AS entity_id
+		FROM amasty_order_attribute_entity_varchar option_value
+		INNER JOIN amasty_order_attribute_grid_flat order_attri
+        ON option_value.entity_id = order_attri.entity_id
+        WHERE option_value.attribute_id = 324 AND value IS NOT NULL 
+        AND option_value.value &gt;= (DATE_SUB(NOW(), INTERVAL 8 DAY))
+) AS order_update_ds
+ON SAOR.entity_id = order_update_ds.entity_id
+LEFT JOIN mageworx_order_base_device_data d ON SAOR.entity_id = d.order_id
+WHERE status IN ('processing', 'closed', 'complete') AND area_name IN ('Frontend', 'REST API')</value>
+            </entry>
+            <entry>
+                <key>sql-post-query</key>
+            </entry>
+            <entry>
+                <key>Max Wait Time</key>
+                <value>0 seconds</value>
+            </entry>
+            <entry>
+                <key>dbf-normalize</key>
+                <value>false</value>
+            </entry>
+            <entry>
+                <key>dbf-user-logical-types</key>
+                <value>false</value>
+            </entry>
+            <entry>
+                <key>compression-format</key>
+                <value>NONE</value>
+            </entry>
+            <entry>
+                <key>dbf-default-precision</key>
+                <value>10</value>
+            </entry>
+            <entry>
+                <key>dbf-default-scale</key>
+                <value>0</value>
+            </entry>
+            <entry>
+                <key>esql-max-rows</key>
+                <value>10</value>
+            </entry>
+            <entry>
+                <key>esql-output-batch-size</key>
+                <value>0</value>
+            </entry>
+            <entry>
+                <key>esql-fetch-size</key>
+                <value>0</value>
+            </entry>
+            <entry>
+                <key>esql-auto-commit</key>
+                <value>true</value>
+            </entry>
+        </properties>
+        <retryCount>10</retryCount>
+        <runDurationMillis>0</runDurationMillis>
+        <schedulingPeriod>0 30 2 ? * WED</schedulingPeriod>
+        <schedulingStrategy>CRON_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+    </config>
+    <executionNodeRestricted>false</executionNodeRestricted>
+    <name>ExecuteSQL</name>
+    <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>failure</name>
+        <retry>false</retry>
+    </relationships>
+    <relationships>
+        <autoTerminate>false</autoTerminate>
+        <name>success</name>
+        <retry>false</retry>
+    </relationships>
+    <state>RUNNING</state>
+    <style/>
+    <type>org.apache.nifi.processors.standard.ExecuteSQL</type>
+</processors>
+                            </contents>
+                            <defaultBackPressureDataSizeThreshold>1 GB</defaultBackPressureDataSizeThreshold>
+                            <defaultBackPressureObjectThreshold>10000</defaultBackPressureObjectThreshold>
+                            <defaultFlowFileExpiration>0 sec</defaultFlowFileExpiration>
+                            <flowfileConcurrency>UNBOUNDED</flowfileConcurrency>
+                            <flowfileOutboundPolicy>STREAM_WHEN_AVAILABLE</flowfileOutboundPolicy>
+                            <name>m2_customer_been_store_PARTIAL</name>
+                            <variables/>
+                        </processGroups>
+                        <processGroups>
+                            <id>8c334051-776f-342a-0000-000000000000</id>
+                            <parentGroupId>70c4cfc2-9455-3663-0000-000000000000</parentGroupId>
+                            <position>
+<x>208.0</x>
+<y>56.0</y>
+                            </position>
+                            <versionedComponentId>8c334051-776f-342a-8341-144b433b5ef6</versionedComponentId>
+                            <comments></comments>
+                            <contents>
+<connections>
+    <id>1fa34a7e-08e0-35b3-0000-000000000000</id>
+    <parentGroupId>8c334051-776f-342a-0000-000000000000</parentGroupId>
+    <versionedComponentId>1fa34a7e-08e0-35b3-b77e-53694679dab1</versionedComponentId>
+    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+    <destination>
+        <groupId>8c334051-776f-342a-0000-000000000000</groupId>
+        <id>5bd6d8d6-8586-337e-0000-000000000000</id>
+        <type>PROCESSOR</type>
+        <versionedComponentId>5bd6d8d6-8586-337e-8783-b25a916b559f</versionedComponentId>
+    </destination>
+    <flowFileExpiration>0 sec</flowFileExpiration>
+    <labelIndex>1</labelIndex>
+    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+    <name></name>
+    <selectedRelationships>success</selectedRelationships>
+    <source>
+        <groupId>8c334051-776f-342a-0000-000000000000</groupId>
+        <id>1ac2cadd-7540-38c2-0000-000000000000</id>
+        <type>PROCESSOR</type>
+        <versionedComponentId>1ac2cadd-7540-38c2-b293-a22e63a4bb98</versionedComponentId>
+    </source>
+    <zIndex>0</zIndex>
+</connections>
+<processors>
+    <id>1ac2cadd-7540-38c2-0000-000000000000</id>
+    <parentGroupId>8c334051-776f-342a-0000-000000000000</parentGroupId>
+    <position>
+        <x>512.0</x>
+        <y>136.0</y>
+    </position>
+    <versionedComponentId>1ac2cadd-7540-38c2-b293-a22e63a4bb98</versionedComponentId>
+    <bundle>
+        <artifact>nifi-standard-nar</artifact>
+        <group>org.apache.nifi</group>
+        <version>1.17.0</version>
+    </bundle>
+    <config>
+        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+        <bulletinLevel>WARN</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <descriptors>
+            <entry>
+                <key>Database Connection Pooling Service</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.dbcp.DBCPService</identifiesControllerService>
+                    <name>Database Connection Pooling Service</name>
+                </value>
+            </entry>
+            <entry>
+                <key>sql-pre-query</key>
+                <value>
+                    <name>sql-pre-query</name>
+                </value>
+            </entry>
+            <entry>
+                <key>SQL select query</key>
+                <value>
+                    <name>SQL select query</name>
+                </value>
+            </entry>
+            <entry>
+                <key>sql-post-query</key>
+                <value>
+                    <name>sql-post-query</name>
+                </value>
+            </entry>
+            <entry>
+                <key>Max Wait Time</key>
+                <value>
+                    <name>Max Wait Time</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-normalize</key>
+                <value>
+                    <name>dbf-normalize</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-user-logical-types</key>
+                <value>
+                    <name>dbf-user-logical-types</name>
+                </value>
+            </entry>
+            <entry>
+                <key>compression-format</key>
+                <value>
+                    <name>compression-format</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-default-precision</key>
+                <value>
+                    <name>dbf-default-precision</name>
+                </value>
+            </entry>
+            <entry>
+                <key>dbf-default-scale</key>
+                <value>
+                    <name>dbf-default-scale</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-max-rows</key>
+                <value>
+                    <name>esql-max-rows</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-output-batch-size</key>
+                <value>
+                    <name>esql-output-batch-size</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-fetch-size</key>
+                <value>
+                    <name>esql-fetch-size</name>
+                </value>
+            </entry>
+            <entry>
+                <key>esql-auto-commit</key>
+                <value>
+                    <name>esql-auto-commit</name>
+                </value>
+            </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+            <entry>
+                <key>Database Connection Pooling Service</key>
+                <value>058d8308-529b-3683-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>sql-pre-query</key>
+            </entry>
+            <entry>
+                <key>SQL select query</key>
+                <value>SELECT DISTINCT
+	SAOR.increment_id AS order_id,
+	CURRENT_TIMESTAMP() AS processing_dt,
+    SAOR.status AS status,
+    order_been_store.value AS not_been_store,
+    order_update_ds.value AS order_update_ds
+FROM sales_order SAOR
+INNER JOIN 
+(
+	SELECT 
+		CASE 
+			WHEN value LIKE '%374%' THEN '已選'
+			ELSE '未選'
+		END AS value,
+		order_attri.parent_id AS entity_id
+		FROM amasty_order_attribute_entity_varchar option_value
+		INNER JOIN amasty_order_attribute_grid_flat order_attri
+        ON option_value.entity_id = order_attri.entity_id
+        WHERE option_value.attribute_id = 300 AND value IS NOT NULL 
+) AS order_been_store
+ON SAOR.entity_id = order_been_store.entity_id
+INNER JOIN 
+(
+	SELECT 
+		value,
+		order_attri.parent_id AS entity_id
+		FROM amasty_order_attribute_entity_varchar option_value
+		INNER JOIN amasty_order_attribute_grid_flat order_attri
+        ON option_value.entity_id = order_attri.entity_id
+        WHERE option_value.attribute_id = 324 AND value IS NOT NULL 
+        -- AND option_value.value &gt;= (NOW() + INTERVAL 8 HOUR)
+) AS order_update_ds
+ON SAOR.entity_id = order_update_ds.entity_id
+LEFT JOIN mageworx_order_base_device_data d ON SAOR.entity_id = d.order_id
+WHERE status IN ('processing', 'closed', 'complete') AND area_name IN ('Frontend', 'REST API')</value>
+            </entry>
+            <entry>
+                <key>sql-post-query</key>
+            </entry>
+            <entry>
+                <key>Max Wait Time</key>
+                <value>0 seconds</value>
+            </entry>
+            <entry>
+                <key>dbf-normalize</key>
+                <value>false</value>
+            </entry>
+            <entry>
+                <key>dbf-user-logical-types</key>
+                <value>false</value>
+            </entry>
+            <entry>
+                <key>compression-format</key>
+                <value>NONE</value>
+            </entry>
+            <entry>
+                <key>dbf-default-precision</key>
+                <value>10</value>
+            </entry>
+            <entry>
+                <key>dbf-default-scale</key>
+                <value>0</value>
+            </entry>
+            <entry>
+                <key>esql-max-rows</key>
+                <value>10</value>
+            </entry>
+            <entry>
+                <key>esql-output-batch-size</key>
+                <value>0</value>
+            </entry>
+            <entry>
+                <key>esql-fetch-size</key>
+                <value>0</value>
+            </entry>
+            <entry>
+                <key>esql-auto-commit</key>
+                <value>true</value>
+            </entry>
+        </properties>
+        <retryCount>10</retryCount>
+        <runDurationMillis>0</runDurationMillis>
+        <schedulingPeriod>0 48 1,7,13,19 * * ?</schedulingPeriod>
+        <schedulingStrategy>CRON_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+    </config>
+    <executionNodeRestricted>false</executionNodeRestricted>
+    <name>ExecuteSQL</name>
+    <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>failure</name>
+        <retry>false</retry>
+    </relationships>
+    <relationships>
+        <autoTerminate>false</autoTerminate>
+        <name>success</name>
+        <retry>false</retry>
+    </relationships>
+    <state>STOPPED</state>
+    <style/>
+    <type>org.apache.nifi.processors.standard.ExecuteSQL</type>
+</processors>
+<processors>
+    <id>5bd6d8d6-8586-337e-0000-000000000000</id>
+    <parentGroupId>8c334051-776f-342a-0000-000000000000</parentGroupId>
+    <position>
+        <x>512.0</x>
+        <y>336.0</y>
+    </position>
+    <versionedComponentId>5bd6d8d6-8586-337e-8783-b25a916b559f</versionedComponentId>
+    <bundle>
+        <artifact>nifi-gcp-nar</artifact>
+        <group>org.apache.nifi</group>
+        <version>1.17.0</version>
+    </bundle>
+    <config>
+        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+        <bulletinLevel>WARN</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <descriptors>
+            <entry>
+                <key>gcp-project-id</key>
+                <value>
+                    <name>gcp-project-id</name>
+                </value>
+            </entry>
+            <entry>
+                <key>GCP Credentials Provider Service</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.gcp.credentials.service.GCPCredentialsService</identifiesControllerService>
+                    <name>GCP Credentials Provider Service</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-retry-count</key>
+                <value>
+                    <name>gcp-retry-count</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-host</key>
+                <value>
+                    <name>gcp-proxy-host</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-port</key>
+                <value>
+                    <name>gcp-proxy-port</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-name</key>
+                <value>
+                    <name>gcp-proxy-user-name</name>
+                </value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-password</key>
+                <value>
+                    <name>gcp-proxy-user-password</name>
+                </value>
+            </entry>
+            <entry>
+                <key>proxy-configuration-service</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+                    <name>proxy-configuration-service</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.dataset</key>
+                <value>
+                    <name>bq.dataset</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.table.name</key>
+                <value>
+                    <name>bq.table.name</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.load.ignore_unknown</key>
+                <value>
+                    <name>bq.load.ignore_unknown</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.record.reader</key>
+                <value>
+                    <identifiesControllerService>org.apache.nifi.serialization.RecordReaderFactory</identifiesControllerService>
+                    <name>bq.record.reader</name>
+                </value>
+            </entry>
+            <entry>
+                <key>bq.skip.invalid.rows</key>
+                <value>
+                    <name>bq.skip.invalid.rows</name>
+                </value>
+            </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+            <entry>
+                <key>gcp-project-id</key>
+                <value>#{BQ.projectID}</value>
+            </entry>
+            <entry>
+                <key>GCP Credentials Provider Service</key>
+                <value>4e66742d-2808-3826-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>gcp-retry-count</key>
+                <value>6</value>
+            </entry>
+            <entry>
+                <key>gcp-proxy-host</key>
+            </entry>
+            <entry>
+                <key>gcp-proxy-port</key>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-name</key>
+            </entry>
+            <entry>
+                <key>gcp-proxy-user-password</key>
+            </entry>
+            <entry>
+                <key>proxy-configuration-service</key>
+            </entry>
+            <entry>
+                <key>bq.dataset</key>
+                <value>#{BQ.m2Dataset}</value>
+            </entry>
+            <entry>
+                <key>bq.table.name</key>
+                <value>#{BQ.m2.dup_m2_customer_been_store}</value>
+            </entry>
+            <entry>
+                <key>bq.load.ignore_unknown</key>
+                <value>false</value>
+            </entry>
+            <entry>
+                <key>bq.record.reader</key>
+                <value>85fc3128-cecb-34ea-0000-000000000000</value>
+            </entry>
+            <entry>
+                <key>bq.skip.invalid.rows</key>
+                <value>false</value>
+            </entry>
+        </properties>
+        <retryCount>10</retryCount>
+        <runDurationMillis>0</runDurationMillis>
+        <schedulingPeriod>0 sec</schedulingPeriod>
+        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+    </config>
+    <executionNodeRestricted>false</executionNodeRestricted>
+    <name>PutBigQueryStreaming</name>
+    <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>failure</name>
+        <retry>false</retry>
+    </relationships>
+    <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>success</name>
+        <retry>false</retry>
+    </relationships>
+    <state>STOPPED</state>
+    <style/>
+    <type>org.apache.nifi.processors.gcp.bigquery.PutBigQueryStreaming</type>
+</processors>
+                            </contents>
+                            <defaultBackPressureDataSizeThreshold>1 GB</defaultBackPressureDataSizeThreshold>
+                            <defaultBackPressureObjectThreshold>10000</defaultBackPressureObjectThreshold>
+                            <defaultFlowFileExpiration>0 sec</defaultFlowFileExpiration>
+                            <flowfileConcurrency>UNBOUNDED</flowfileConcurrency>
+                            <flowfileOutboundPolicy>STREAM_WHEN_AVAILABLE</flowfileOutboundPolicy>
+                            <name>m2_customer_been_store_test</name>
+                            <variables/>
+                        </processGroups>
+                    </contents>
+                    <defaultBackPressureDataSizeThreshold>1 GB</defaultBackPressureDataSizeThreshold>
+                    <defaultBackPressureObjectThreshold>10000</defaultBackPressureObjectThreshold>
+                    <defaultFlowFileExpiration>0 sec</defaultFlowFileExpiration>
+                    <flowfileConcurrency>UNBOUNDED</flowfileConcurrency>
+                    <flowfileOutboundPolicy>STREAM_WHEN_AVAILABLE</flowfileOutboundPolicy>
+                    <name>m2_customer_been_store</name>
+                    <variables/>
+                </processGroups>
+                <processGroups>
+                    <id>75aa63cc-8340-3d29-0000-000000000000</id>
+                    <parentGroupId>8f8a2f97-959c-3ff6-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>464.0</x>
+                        <y>424.0</y>
+                    </position>
+                    <versionedComponentId>75aa63cc-8340-3d29-8a80-d4c0b851525b</versionedComponentId>
+                    <comments>FOR 將 SAP 收付款資料、配送資料放回 M2 對照 M2 order entity_id &amp; increment_id</comments>
+                    <contents>
+                        <connections>
+                            <id>55f7654e-f7de-36d0-0000-000000000000</id>
+                            <parentGroupId>75aa63cc-8340-3d29-0000-000000000000</parentGroupId>
+                            <versionedComponentId>55f7654e-f7de-36d0-a036-c751ab9a7775</versionedComponentId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>75aa63cc-8340-3d29-0000-000000000000</groupId>
+<id>a7377f12-3d38-367a-0000-000000000000</id>
+<type>PROCESSOR</type>
+<versionedComponentId>a7377f12-3d38-367a-835f-58b2dcdfdba9</versionedComponentId>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>success</selectedRelationships>
+                            <source>
+<groupId>75aa63cc-8340-3d29-0000-000000000000</groupId>
+<id>de2ede3e-763e-3ef8-0000-000000000000</id>
+<type>PROCESSOR</type>
+<versionedComponentId>de2ede3e-763e-3ef8-a55a-0765affcd5b9</versionedComponentId>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
+                            <id>aa28937b-b38b-3d4c-0000-000000000000</id>
+                            <parentGroupId>75aa63cc-8340-3d29-0000-000000000000</parentGroupId>
+                            <versionedComponentId>aa28937b-b38b-3d4c-a3c9-c22098cf7eb8</versionedComponentId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>75aa63cc-8340-3d29-0000-000000000000</groupId>
+<id>5a1bfb10-f225-3271-0000-000000000000</id>
+<type>PROCESSOR</type>
+<versionedComponentId>5a1bfb10-f225-3271-a69e-bf3e8305498a</versionedComponentId>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>success</selectedRelationships>
+                            <source>
+<groupId>75aa63cc-8340-3d29-0000-000000000000</groupId>
+<id>a7377f12-3d38-367a-0000-000000000000</id>
+<type>PROCESSOR</type>
+<versionedComponentId>a7377f12-3d38-367a-835f-58b2dcdfdba9</versionedComponentId>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <processors>
+                            <id>5a1bfb10-f225-3271-0000-000000000000</id>
+                            <parentGroupId>75aa63cc-8340-3d29-0000-000000000000</parentGroupId>
+                            <position>
+<x>409.0000149857398</x>
+<y>642.999995507956</y>
+                            </position>
+                            <versionedComponentId>5a1bfb10-f225-3271-a69e-bf3e8305498a</versionedComponentId>
+                            <bundle>
+<artifact>nifi-gcp-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.17.0</version>
+                            </bundle>
+                            <config>
+<backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>gcp-project-id</key>
+        <value>
+            <name>gcp-project-id</name>
+        </value>
+    </entry>
+    <entry>
+        <key>GCP Credentials Provider Service</key>
+        <value>
+            <identifiesControllerService>org.apache.nifi.gcp.credentials.service.GCPCredentialsService</identifiesControllerService>
+            <name>GCP Credentials Provider Service</name>
+        </value>
+    </entry>
+    <entry>
+        <key>gcp-retry-count</key>
+        <value>
+            <name>gcp-retry-count</name>
+        </value>
+    </entry>
+    <entry>
+        <key>gcp-proxy-host</key>
+        <value>
+            <name>gcp-proxy-host</name>
+        </value>
+    </entry>
+    <entry>
+        <key>gcp-proxy-port</key>
+        <value>
+            <name>gcp-proxy-port</name>
+        </value>
+    </entry>
+    <entry>
+        <key>gcp-proxy-user-name</key>
+        <value>
+            <name>gcp-proxy-user-name</name>
+        </value>
+    </entry>
+    <entry>
+        <key>gcp-proxy-user-password</key>
+        <value>
+            <name>gcp-proxy-user-password</name>
+        </value>
+    </entry>
+    <entry>
+        <key>proxy-configuration-service</key>
+        <value>
+            <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+            <name>proxy-configuration-service</name>
+        </value>
+    </entry>
+    <entry>
+        <key>bq.dataset</key>
+        <value>
+            <name>bq.dataset</name>
+        </value>
+    </entry>
+    <entry>
+        <key>bq.table.name</key>
+        <value>
+            <name>bq.table.name</name>
+        </value>
+    </entry>
+    <entry>
+        <key>bq.load.ignore_unknown</key>
+        <value>
+            <name>bq.load.ignore_unknown</name>
+        </value>
+    </entry>
+    <entry>
+        <key>bq.record.reader</key>
+        <value>
+            <identifiesControllerService>org.apache.nifi.serialization.RecordReaderFactory</identifiesControllerService>
+            <name>bq.record.reader</name>
+        </value>
+    </entry>
+    <entry>
+        <key>bq.skip.invalid.rows</key>
+        <value>
+            <name>bq.skip.invalid.rows</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<maxBackoffPeriod>10 mins</maxBackoffPeriod>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>gcp-project-id</key>
+        <value>#{BQ.projectID}</value>
+    </entry>
+    <entry>
+        <key>GCP Credentials Provider Service</key>
+        <value>4e66742d-2808-3826-0000-000000000000</value>
+    </entry>
+    <entry>
+        <key>gcp-retry-count</key>
+        <value>6</value>
+    </entry>
+    <entry>
+        <key>gcp-proxy-host</key>
+    </entry>
+    <entry>
+        <key>gcp-proxy-port</key>
+    </entry>
+    <entry>
+        <key>gcp-proxy-user-name</key>
+    </entry>
+    <entry>
+        <key>gcp-proxy-user-password</key>
+    </entry>
+    <entry>
+        <key>proxy-configuration-service</key>
+    </entry>
+    <entry>
+        <key>bq.dataset</key>
+        <value>#{BQ.m2Dataset}</value>
+    </entry>
+    <entry>
+        <key>bq.table.name</key>
+        <value>m2_order_enity_id_increment_id</value>
+    </entry>
+    <entry>
+        <key>bq.load.ignore_unknown</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>bq.record.reader</key>
+        <value>85fc3128-cecb-34ea-0000-000000000000</value>
+    </entry>
+    <entry>
+        <key>bq.skip.invalid.rows</key>
+        <value>false</value>
+    </entry>
+</properties>
+<retryCount>10</retryCount>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>0 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>PutBigQueryStreaming</name>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>failure</name>
+<retry>false</retry>
+                            </relationships>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>success</name>
+<retry>false</retry>
+                            </relationships>
+                            <state>RUNNING</state>
+                            <style/>
+                            <type>org.apache.nifi.processors.gcp.bigquery.PutBigQueryStreaming</type>
+                        </processors>
+                        <processors>
+                            <id>a7377f12-3d38-367a-0000-000000000000</id>
+                            <parentGroupId>75aa63cc-8340-3d29-0000-000000000000</parentGroupId>
+                            <position>
+<x>409.0000149857398</x>
+<y>466.999995507956</y>
+                            </position>
+                            <versionedComponentId>a7377f12-3d38-367a-835f-58b2dcdfdba9</versionedComponentId>
+                            <bundle>
+<artifact>nifi-standard-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.17.0</version>
+                            </bundle>
+                            <config>
+<backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>Database Connection Pooling Service</key>
+        <value>
+            <identifiesControllerService>org.apache.nifi.dbcp.DBCPService</identifiesControllerService>
+            <name>Database Connection Pooling Service</name>
+        </value>
+    </entry>
+    <entry>
+        <key>sql-pre-query</key>
+        <value>
+            <name>sql-pre-query</name>
+        </value>
+    </entry>
+    <entry>
+        <key>SQL select query</key>
+        <value>
+            <name>SQL select query</name>
+        </value>
+    </entry>
+    <entry>
+        <key>sql-post-query</key>
+        <value>
+            <name>sql-post-query</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Max Wait Time</key>
+        <value>
+            <name>Max Wait Time</name>
+        </value>
+    </entry>
+    <entry>
+        <key>dbf-normalize</key>
+        <value>
+            <name>dbf-normalize</name>
+        </value>
+    </entry>
+    <entry>
+        <key>dbf-user-logical-types</key>
+        <value>
+            <name>dbf-user-logical-types</name>
+        </value>
+    </entry>
+    <entry>
+        <key>compression-format</key>
+        <value>
+            <name>compression-format</name>
+        </value>
+    </entry>
+    <entry>
+        <key>dbf-default-precision</key>
+        <value>
+            <name>dbf-default-precision</name>
+        </value>
+    </entry>
+    <entry>
+        <key>dbf-default-scale</key>
+        <value>
+            <name>dbf-default-scale</name>
+        </value>
+    </entry>
+    <entry>
+        <key>esql-max-rows</key>
+        <value>
+            <name>esql-max-rows</name>
+        </value>
+    </entry>
+    <entry>
+        <key>esql-output-batch-size</key>
+        <value>
+            <name>esql-output-batch-size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>esql-fetch-size</key>
+        <value>
+            <name>esql-fetch-size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>esql-auto-commit</key>
+        <value>
+            <name>esql-auto-commit</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<maxBackoffPeriod>10 mins</maxBackoffPeriod>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>Database Connection Pooling Service</key>
+        <value>058d8308-529b-3683-0000-000000000000</value>
+    </entry>
+    <entry>
+        <key>sql-pre-query</key>
+    </entry>
+    <entry>
+        <key>SQL select query</key>
+        <value>SELECT entity_id, increment_id , CURRENT_TIMESTAMP AS 'processing_dt' 
+FROM sales_order 
+WHERE status IN ('processing', 'complete','closed') AND created_at &gt;= '2022-02-01'</value>
+    </entry>
+    <entry>
+        <key>sql-post-query</key>
+    </entry>
+    <entry>
+        <key>Max Wait Time</key>
+        <value>0 seconds</value>
+    </entry>
+    <entry>
+        <key>dbf-normalize</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>dbf-user-logical-types</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>compression-format</key>
+        <value>NONE</value>
+    </entry>
+    <entry>
+        <key>dbf-default-precision</key>
+        <value>10</value>
+    </entry>
+    <entry>
+        <key>dbf-default-scale</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>esql-max-rows</key>
+        <value>10</value>
+    </entry>
+    <entry>
+        <key>esql-output-batch-size</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>esql-fetch-size</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>esql-auto-commit</key>
+        <value>true</value>
+    </entry>
+</properties>
+<retryCount>10</retryCount>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>0 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>ExecuteSQL</name>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>failure</name>
+<retry>false</retry>
+                            </relationships>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>success</name>
+<retry>false</retry>
+                            </relationships>
+                            <state>RUNNING</state>
+                            <style>
+<entry>
+    <key>background-color</key>
+    <value>#ffffff</value>
+</entry>
+                            </style>
+                            <type>org.apache.nifi.processors.standard.ExecuteSQL</type>
+                        </processors>
+                        <processors>
+                            <id>de2ede3e-763e-3ef8-0000-000000000000</id>
+                            <parentGroupId>75aa63cc-8340-3d29-0000-000000000000</parentGroupId>
+                            <position>
+<x>409.0000149857398</x>
+<y>282.999995507956</y>
+                            </position>
+                            <versionedComponentId>de2ede3e-763e-3ef8-a55a-0765affcd5b9</versionedComponentId>
+                            <bundle>
+<artifact>nifi-standard-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.17.0</version>
+                            </bundle>
+                            <config>
+<backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>Database Connection Pooling Service</key>
+        <value>
+            <identifiesControllerService>org.apache.nifi.dbcp.DBCPService</identifiesControllerService>
+            <name>Database Connection Pooling Service</name>
+        </value>
+    </entry>
+    <entry>
+        <key>sql-pre-query</key>
+        <value>
+            <name>sql-pre-query</name>
+        </value>
+    </entry>
+    <entry>
+        <key>SQL select query</key>
+        <value>
+            <name>SQL select query</name>
+        </value>
+    </entry>
+    <entry>
+        <key>sql-post-query</key>
+        <value>
+            <name>sql-post-query</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Max Wait Time</key>
+        <value>
+            <name>Max Wait Time</name>
+        </value>
+    </entry>
+    <entry>
+        <key>dbf-normalize</key>
+        <value>
+            <name>dbf-normalize</name>
+        </value>
+    </entry>
+    <entry>
+        <key>dbf-user-logical-types</key>
+        <value>
+            <name>dbf-user-logical-types</name>
+        </value>
+    </entry>
+    <entry>
+        <key>compression-format</key>
+        <value>
+            <name>compression-format</name>
+        </value>
+    </entry>
+    <entry>
+        <key>dbf-default-precision</key>
+        <value>
+            <name>dbf-default-precision</name>
+        </value>
+    </entry>
+    <entry>
+        <key>dbf-default-scale</key>
+        <value>
+            <name>dbf-default-scale</name>
+        </value>
+    </entry>
+    <entry>
+        <key>esql-max-rows</key>
+        <value>
+            <name>esql-max-rows</name>
+        </value>
+    </entry>
+    <entry>
+        <key>esql-output-batch-size</key>
+        <value>
+            <name>esql-output-batch-size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>esql-fetch-size</key>
+        <value>
+            <name>esql-fetch-size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>esql-auto-commit</key>
+        <value>
+            <name>esql-auto-commit</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<maxBackoffPeriod>10 mins</maxBackoffPeriod>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>Database Connection Pooling Service</key>
+        <value>af16eeae-adf1-3fd9-0000-000000000000</value>
+    </entry>
+    <entry>
+        <key>sql-pre-query</key>
+    </entry>
+    <entry>
+        <key>SQL select query</key>
+        <value>TRUNCATE TABLE `#{BQ.projectID}.#{BQ.m2Dataset}.m2_order_enity_id_increment_id`</value>
+    </entry>
+    <entry>
+        <key>sql-post-query</key>
+    </entry>
+    <entry>
+        <key>Max Wait Time</key>
+        <value>0 seconds</value>
+    </entry>
+    <entry>
+        <key>dbf-normalize</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>dbf-user-logical-types</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>compression-format</key>
+        <value>NONE</value>
+    </entry>
+    <entry>
+        <key>dbf-default-precision</key>
+        <value>10</value>
+    </entry>
+    <entry>
+        <key>dbf-default-scale</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>esql-max-rows</key>
+        <value>10</value>
+    </entry>
+    <entry>
+        <key>esql-output-batch-size</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>esql-fetch-size</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>esql-auto-commit</key>
+        <value>true</value>
+    </entry>
+</properties>
+<retryCount>10</retryCount>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>0 30 * * * ?</schedulingPeriod>
+<schedulingStrategy>CRON_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>ExecuteSQL</name>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>failure</name>
+<retry>false</retry>
+                            </relationships>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>success</name>
+<retry>false</retry>
+                            </relationships>
+                            <state>RUNNING</state>
+                            <style>
+<entry>
+    <key>background-color</key>
+    <value>#ffffff</value>
+</entry>
+                            </style>
+                            <type>org.apache.nifi.processors.standard.ExecuteSQL</type>
+                        </processors>
+                    </contents>
+                    <defaultBackPressureDataSizeThreshold>1 GB</defaultBackPressureDataSizeThreshold>
+                    <defaultBackPressureObjectThreshold>10000</defaultBackPressureObjectThreshold>
+                    <defaultFlowFileExpiration>0 sec</defaultFlowFileExpiration>
+                    <flowfileConcurrency>UNBOUNDED</flowfileConcurrency>
+                    <flowfileOutboundPolicy>STREAM_WHEN_AVAILABLE</flowfileOutboundPolicy>
+                    <name>m2_order_enity_id_increment_id</name>
+                    <variables/>
+                </processGroups>
+                <processGroups>
+                    <id>bf3b5c88-bffd-3b7a-0000-000000000000</id>
+                    <parentGroupId>8f8a2f97-959c-3ff6-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>464.0</x>
+                        <y>736.0</y>
+                    </position>
+                    <versionedComponentId>bf3b5c88-bffd-3b7a-b831-1002b557e470</versionedComponentId>
+                    <comments></comments>
+                    <contents>
+                        <connections>
+                            <id>519851c7-18ef-363c-0000-000000000000</id>
+                            <parentGroupId>bf3b5c88-bffd-3b7a-0000-000000000000</parentGroupId>
+                            <versionedComponentId>aa28937b-b38b-3d4c-a3c9-c22098cf7eb8</versionedComponentId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>bf3b5c88-bffd-3b7a-0000-000000000000</groupId>
+<id>9b977a7f-888e-3f44-0000-000000000000</id>
+<type>PROCESSOR</type>
+<versionedComponentId>5a1bfb10-f225-3271-a69e-bf3e8305498a</versionedComponentId>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>success</selectedRelationships>
+                            <source>
+<groupId>bf3b5c88-bffd-3b7a-0000-000000000000</groupId>
+<id>4811b887-82a9-3d71-0000-000000000000</id>
+<type>PROCESSOR</type>
+<versionedComponentId>a7377f12-3d38-367a-835f-58b2dcdfdba9</versionedComponentId>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
+                            <id>cdc2c6ea-44b7-31fb-0000-000000000000</id>
+                            <parentGroupId>bf3b5c88-bffd-3b7a-0000-000000000000</parentGroupId>
+                            <versionedComponentId>cdc2c6ea-44b7-31fb-a0ee-adebabfe0b4f</versionedComponentId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>bf3b5c88-bffd-3b7a-0000-000000000000</groupId>
+<id>4811b887-82a9-3d71-0000-000000000000</id>
+<type>PROCESSOR</type>
+<versionedComponentId>a7377f12-3d38-367a-835f-58b2dcdfdba9</versionedComponentId>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>success</selectedRelationships>
+                            <source>
+<groupId>bf3b5c88-bffd-3b7a-0000-000000000000</groupId>
+<id>579bd6ce-3812-3e7a-0000-000000000000</id>
+<type>PROCESSOR</type>
+<versionedComponentId>de2ede3e-763e-3ef8-a55a-0765affcd5b9</versionedComponentId>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <labels>
+                            <id>d0356754-12b5-3e21-0000-000000000000</id>
+                            <parentGroupId>bf3b5c88-bffd-3b7a-0000-000000000000</parentGroupId>
+                            <position>
+<x>408.0</x>
+<y>248.0</y>
+                            </position>
+                            <versionedComponentId>d0356754-12b5-3e21-893f-5ee306e2e382</versionedComponentId>
+                            <height>32.0</height>
+                            <label>化妝桌專案</label>
+                            <style>
+<entry>
+    <key>font-size</key>
+    <value>12px</value>
+</entry>
+                            </style>
+                            <width>112.0</width>
+                            <zIndex>0</zIndex>
+                        </labels>
+                        <processors>
+                            <id>4811b887-82a9-3d71-0000-000000000000</id>
+                            <parentGroupId>bf3b5c88-bffd-3b7a-0000-000000000000</parentGroupId>
+                            <position>
+<x>408.0</x>
+<y>464.0</y>
+                            </position>
+                            <versionedComponentId>a7377f12-3d38-367a-835f-58b2dcdfdba9</versionedComponentId>
+                            <bundle>
+<artifact>nifi-standard-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.17.0</version>
+                            </bundle>
+                            <config>
+<backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>Database Connection Pooling Service</key>
+        <value>
+            <identifiesControllerService>org.apache.nifi.dbcp.DBCPService</identifiesControllerService>
+            <name>Database Connection Pooling Service</name>
+        </value>
+    </entry>
+    <entry>
+        <key>sql-pre-query</key>
+        <value>
+            <name>sql-pre-query</name>
+        </value>
+    </entry>
+    <entry>
+        <key>SQL select query</key>
+        <value>
+            <name>SQL select query</name>
+        </value>
+    </entry>
+    <entry>
+        <key>sql-post-query</key>
+        <value>
+            <name>sql-post-query</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Max Wait Time</key>
+        <value>
+            <name>Max Wait Time</name>
+        </value>
+    </entry>
+    <entry>
+        <key>dbf-normalize</key>
+        <value>
+            <name>dbf-normalize</name>
+        </value>
+    </entry>
+    <entry>
+        <key>dbf-user-logical-types</key>
+        <value>
+            <name>dbf-user-logical-types</name>
+        </value>
+    </entry>
+    <entry>
+        <key>compression-format</key>
+        <value>
+            <name>compression-format</name>
+        </value>
+    </entry>
+    <entry>
+        <key>dbf-default-precision</key>
+        <value>
+            <name>dbf-default-precision</name>
+        </value>
+    </entry>
+    <entry>
+        <key>dbf-default-scale</key>
+        <value>
+            <name>dbf-default-scale</name>
+        </value>
+    </entry>
+    <entry>
+        <key>esql-max-rows</key>
+        <value>
+            <name>esql-max-rows</name>
+        </value>
+    </entry>
+    <entry>
+        <key>esql-output-batch-size</key>
+        <value>
+            <name>esql-output-batch-size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>esql-fetch-size</key>
+        <value>
+            <name>esql-fetch-size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>esql-auto-commit</key>
+        <value>
+            <name>esql-auto-commit</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<maxBackoffPeriod>10 mins</maxBackoffPeriod>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>Database Connection Pooling Service</key>
+        <value>058d8308-529b-3683-0000-000000000000</value>
+    </entry>
+    <entry>
+        <key>sql-pre-query</key>
+        <value>SET @startDate = '2023-04-01';
+SET @endDate = '2023-11-28';
+</value>
+    </entry>
+    <entry>
+        <key>SQL select query</key>
+        <value>SELECT 
+  o.increment_id, 
+  o.status, 
+  order_item.sku, 
+  order_item.name, 
+  order_item.price, 
+  order_item.qty_ordered, 
+  order_item.row_total AS 'subtotal',
+  order_item.discount_amount,
+  order_item.row_total + IFNULL(order_item.tax_amount,0) + IFNULL(order_item.weee_tax_applied_row_amount,0) + IFNULL(order_item.discount_tax_compensation_amount,0) - IFNULL(order_item.discount_amount,0) AS 'row_total',
+  CONVERT_TZ(CURRENT_TIMESTAMP, '+00:00', '+08:00') AS 'processing_dt'
+FROM sales_order o
+LEFT JOIN sales_order_item order_item ON 
+o.entity_id = order_item.order_id
+WHERE (o.status = 'processing' OR o.status = 'complete' OR o.status = 'closed') AND
+order_item.sku IN ('1017957', '1017955', '1017956', '1018006', '1018007')
+AND o.created_at &gt;= @startDate</value>
+    </entry>
+    <entry>
+        <key>sql-post-query</key>
+    </entry>
+    <entry>
+        <key>Max Wait Time</key>
+        <value>0 seconds</value>
+    </entry>
+    <entry>
+        <key>dbf-normalize</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>dbf-user-logical-types</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>compression-format</key>
+        <value>NONE</value>
+    </entry>
+    <entry>
+        <key>dbf-default-precision</key>
+        <value>10</value>
+    </entry>
+    <entry>
+        <key>dbf-default-scale</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>esql-max-rows</key>
+        <value>10</value>
+    </entry>
+    <entry>
+        <key>esql-output-batch-size</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>esql-fetch-size</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>esql-auto-commit</key>
+        <value>true</value>
+    </entry>
+</properties>
+<retryCount>10</retryCount>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>0 15 12 * * ?</schedulingPeriod>
+<schedulingStrategy>CRON_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>ExecuteSQL</name>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>failure</name>
+<retry>false</retry>
+                            </relationships>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>success</name>
+<retry>false</retry>
+                            </relationships>
+                            <state>STOPPED</state>
+                            <style>
+<entry>
+    <key>background-color</key>
+    <value>#ffffff</value>
+</entry>
+                            </style>
+                            <type>org.apache.nifi.processors.standard.ExecuteSQL</type>
+                        </processors>
+                        <processors>
+                            <id>579bd6ce-3812-3e7a-0000-000000000000</id>
+                            <parentGroupId>bf3b5c88-bffd-3b7a-0000-000000000000</parentGroupId>
+                            <position>
+<x>408.0</x>
+<y>288.0</y>
+                            </position>
+                            <versionedComponentId>de2ede3e-763e-3ef8-a55a-0765affcd5b9</versionedComponentId>
+                            <bundle>
+<artifact>nifi-standard-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.17.0</version>
+                            </bundle>
+                            <config>
+<backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>Database Connection Pooling Service</key>
+        <value>
+            <identifiesControllerService>org.apache.nifi.dbcp.DBCPService</identifiesControllerService>
+            <name>Database Connection Pooling Service</name>
+        </value>
+    </entry>
+    <entry>
+        <key>sql-pre-query</key>
+        <value>
+            <name>sql-pre-query</name>
+        </value>
+    </entry>
+    <entry>
+        <key>SQL select query</key>
+        <value>
+            <name>SQL select query</name>
+        </value>
+    </entry>
+    <entry>
+        <key>sql-post-query</key>
+        <value>
+            <name>sql-post-query</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Max Wait Time</key>
+        <value>
+            <name>Max Wait Time</name>
+        </value>
+    </entry>
+    <entry>
+        <key>dbf-normalize</key>
+        <value>
+            <name>dbf-normalize</name>
+        </value>
+    </entry>
+    <entry>
+        <key>dbf-user-logical-types</key>
+        <value>
+            <name>dbf-user-logical-types</name>
+        </value>
+    </entry>
+    <entry>
+        <key>compression-format</key>
+        <value>
+            <name>compression-format</name>
+        </value>
+    </entry>
+    <entry>
+        <key>dbf-default-precision</key>
+        <value>
+            <name>dbf-default-precision</name>
+        </value>
+    </entry>
+    <entry>
+        <key>dbf-default-scale</key>
+        <value>
+            <name>dbf-default-scale</name>
+        </value>
+    </entry>
+    <entry>
+        <key>esql-max-rows</key>
+        <value>
+            <name>esql-max-rows</name>
+        </value>
+    </entry>
+    <entry>
+        <key>esql-output-batch-size</key>
+        <value>
+            <name>esql-output-batch-size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>esql-fetch-size</key>
+        <value>
+            <name>esql-fetch-size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>esql-auto-commit</key>
+        <value>
+            <name>esql-auto-commit</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<maxBackoffPeriod>10 mins</maxBackoffPeriod>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>Database Connection Pooling Service</key>
+        <value>af16eeae-adf1-3fd9-0000-000000000000</value>
+    </entry>
+    <entry>
+        <key>sql-pre-query</key>
+    </entry>
+    <entry>
+        <key>SQL select query</key>
+        <value>TRUNCATE TABLE `#{BQ.projectID}.#{BQ.m2Dataset}.#{BQ.m2.presale_project}`</value>
+    </entry>
+    <entry>
+        <key>sql-post-query</key>
+    </entry>
+    <entry>
+        <key>Max Wait Time</key>
+        <value>0 seconds</value>
+    </entry>
+    <entry>
+        <key>dbf-normalize</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>dbf-user-logical-types</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>compression-format</key>
+        <value>NONE</value>
+    </entry>
+    <entry>
+        <key>dbf-default-precision</key>
+        <value>10</value>
+    </entry>
+    <entry>
+        <key>dbf-default-scale</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>esql-max-rows</key>
+        <value>10</value>
+    </entry>
+    <entry>
+        <key>esql-output-batch-size</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>esql-fetch-size</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>esql-auto-commit</key>
+        <value>true</value>
+    </entry>
+</properties>
+<retryCount>10</retryCount>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>0 55 11 * * ?</schedulingPeriod>
+<schedulingStrategy>CRON_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>ExecuteSQL</name>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>failure</name>
+<retry>false</retry>
+                            </relationships>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>success</name>
+<retry>false</retry>
+                            </relationships>
+                            <state>STOPPED</state>
+                            <style>
+<entry>
+    <key>background-color</key>
+    <value>#ffffff</value>
+</entry>
+                            </style>
+                            <type>org.apache.nifi.processors.standard.ExecuteSQL</type>
+                        </processors>
+                        <processors>
+                            <id>9b977a7f-888e-3f44-0000-000000000000</id>
+                            <parentGroupId>bf3b5c88-bffd-3b7a-0000-000000000000</parentGroupId>
+                            <position>
+<x>409.0000149857398</x>
+<y>642.999995507956</y>
+                            </position>
+                            <versionedComponentId>5a1bfb10-f225-3271-a69e-bf3e8305498a</versionedComponentId>
+                            <bundle>
+<artifact>nifi-gcp-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.17.0</version>
+                            </bundle>
+                            <config>
+<backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>gcp-project-id</key>
+        <value>
+            <name>gcp-project-id</name>
+        </value>
+    </entry>
+    <entry>
+        <key>GCP Credentials Provider Service</key>
+        <value>
+            <identifiesControllerService>org.apache.nifi.gcp.credentials.service.GCPCredentialsService</identifiesControllerService>
+            <name>GCP Credentials Provider Service</name>
+        </value>
+    </entry>
+    <entry>
+        <key>gcp-retry-count</key>
+        <value>
+            <name>gcp-retry-count</name>
+        </value>
+    </entry>
+    <entry>
+        <key>gcp-proxy-host</key>
+        <value>
+            <name>gcp-proxy-host</name>
+        </value>
+    </entry>
+    <entry>
+        <key>gcp-proxy-port</key>
+        <value>
+            <name>gcp-proxy-port</name>
+        </value>
+    </entry>
+    <entry>
+        <key>gcp-proxy-user-name</key>
+        <value>
+            <name>gcp-proxy-user-name</name>
+        </value>
+    </entry>
+    <entry>
+        <key>gcp-proxy-user-password</key>
+        <value>
+            <name>gcp-proxy-user-password</name>
+        </value>
+    </entry>
+    <entry>
+        <key>proxy-configuration-service</key>
+        <value>
+            <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+            <name>proxy-configuration-service</name>
+        </value>
+    </entry>
+    <entry>
+        <key>bq.dataset</key>
+        <value>
+            <name>bq.dataset</name>
+        </value>
+    </entry>
+    <entry>
+        <key>bq.table.name</key>
+        <value>
+            <name>bq.table.name</name>
+        </value>
+    </entry>
+    <entry>
+        <key>bq.load.ignore_unknown</key>
+        <value>
+            <name>bq.load.ignore_unknown</name>
+        </value>
+    </entry>
+    <entry>
+        <key>bq.record.reader</key>
+        <value>
+            <identifiesControllerService>org.apache.nifi.serialization.RecordReaderFactory</identifiesControllerService>
+            <name>bq.record.reader</name>
+        </value>
+    </entry>
+    <entry>
+        <key>bq.skip.invalid.rows</key>
+        <value>
+            <name>bq.skip.invalid.rows</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<maxBackoffPeriod>10 mins</maxBackoffPeriod>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>gcp-project-id</key>
+        <value>#{BQ.projectID}</value>
+    </entry>
+    <entry>
+        <key>GCP Credentials Provider Service</key>
+        <value>4e66742d-2808-3826-0000-000000000000</value>
+    </entry>
+    <entry>
+        <key>gcp-retry-count</key>
+        <value>15</value>
+    </entry>
+    <entry>
+        <key>gcp-proxy-host</key>
+    </entry>
+    <entry>
+        <key>gcp-proxy-port</key>
+    </entry>
+    <entry>
+        <key>gcp-proxy-user-name</key>
+    </entry>
+    <entry>
+        <key>gcp-proxy-user-password</key>
+    </entry>
+    <entry>
+        <key>proxy-configuration-service</key>
+    </entry>
+    <entry>
+        <key>bq.dataset</key>
+        <value>#{BQ.m2Dataset}</value>
+    </entry>
+    <entry>
+        <key>bq.table.name</key>
+        <value>#{BQ.m2.presale_project}</value>
+    </entry>
+    <entry>
+        <key>bq.load.ignore_unknown</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>bq.record.reader</key>
+        <value>85fc3128-cecb-34ea-0000-000000000000</value>
+    </entry>
+    <entry>
+        <key>bq.skip.invalid.rows</key>
+        <value>false</value>
+    </entry>
+</properties>
+<retryCount>10</retryCount>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>0 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>PutBigQueryStreaming</name>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>failure</name>
+<retry>false</retry>
+                            </relationships>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>success</name>
+<retry>false</retry>
+                            </relationships>
+                            <state>STOPPED</state>
+                            <style/>
+                            <type>org.apache.nifi.processors.gcp.bigquery.PutBigQueryStreaming</type>
+                        </processors>
+                    </contents>
+                    <defaultBackPressureDataSizeThreshold>1 GB</defaultBackPressureDataSizeThreshold>
+                    <defaultBackPressureObjectThreshold>10000</defaultBackPressureObjectThreshold>
+                    <defaultFlowFileExpiration>0 sec</defaultFlowFileExpiration>
+                    <flowfileConcurrency>UNBOUNDED</flowfileConcurrency>
+                    <flowfileOutboundPolicy>STREAM_WHEN_AVAILABLE</flowfileOutboundPolicy>
+                    <name>m2_presale_project</name>
+                    <variables/>
+                </processGroups>
+            </contents>
+            <defaultBackPressureDataSizeThreshold>1 GB</defaultBackPressureDataSizeThreshold>
+            <defaultBackPressureObjectThreshold>10000</defaultBackPressureObjectThreshold>
+            <defaultFlowFileExpiration>0 sec</defaultFlowFileExpiration>
+            <flowfileConcurrency>UNBOUNDED</flowfileConcurrency>
+            <flowfileOutboundPolicy>STREAM_WHEN_AVAILABLE</flowfileOutboundPolicy>
+            <name>M22BQ</name>
+            <variables/>
+        </processGroups>
+    </snippet>
+    <timestamp>11/20/2024 11:27:31 CST</timestamp>
+</template>
