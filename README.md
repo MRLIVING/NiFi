@@ -58,6 +58,12 @@ cd /opt/nifi-1.16.2/
 ./bin/nifi.sh status
 ```
 
+### chnage password
+```
+./bin/nifi.sh set-single-user-credentials nifi newpassword123
+./bin/nifi.sh restart
+```
+
 ## Concept and [Terminology](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#terminology)
 * [FlowFile](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html#terminology)
 * [Processor](https://nifi.apache.org/docs/nifi-docs/html/getting-started.html#what-processors-are-available) 
